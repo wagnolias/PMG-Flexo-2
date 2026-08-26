@@ -163,15 +163,15 @@ export const HeroGroup = () => {
             {/* Quick Summary Numbers */}
             <div className="mt-12 pt-8 border-t border-white/10 grid grid-cols-3 gap-6 max-w-md">
               <div>
-                <div className="text-2xl sm:text-3xl font-extrabold text-white">24 Horas</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-white whitespace-nowrap">24 Horas</div>
                 <div className="text-xs text-slate-400 mt-0.5">Gravação Contínua*</div>
               </div>
               <div>
-                <div className="text-2xl sm:text-3xl font-extrabold text-pmg-magenta">06</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-pmg-magenta whitespace-nowrap">06</div>
                 <div className="text-xs text-slate-400 mt-0.5">Gravadoras Digitais</div>
               </div>
               <div>
-                <div className="text-2xl sm:text-3xl font-extrabold text-white">200 LPI</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-white whitespace-nowrap">200 LPI</div>
                 <div className="text-xs text-slate-400 mt-0.5">Retícula Everest®</div>
               </div>
             </div>
