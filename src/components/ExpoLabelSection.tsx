@@ -105,7 +105,6 @@ export const ExpoLabelSection: React.FC = () => {
                   alt={foto.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
-                  loading="lazy"
                 />
                 
                 {/* Overlay gradient */}

@@ -336,7 +336,6 @@ export const SummitAcademy = () => {
                     alt={foto.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-108"
                     referrerPolicy="no-referrer"
-                    loading="lazy"
                   />
                   
                   {/* Subtle Dark Gradient Overlay */}
