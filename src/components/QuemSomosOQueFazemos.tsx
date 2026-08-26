@@ -132,7 +132,7 @@ export const QuemSomosOQueFazemos = () => {
     {
       id: "cliches-hd",
       icon: <Layers className="text-pmg-magenta" size={24} />,
-      title: "Gravação de Matrizes Flexográficas (Clichês)",
+      title: "Gravação de Clichês em Fotopolímero",
       tag: "Tecnologia Própria",
       tagColor: "bg-pmg-magenta/10 text-pmg-magenta border-pmg-magenta/20",
       desc: "Produção de matrizes fotopolímeras digitais em alta resolução para banda larga e banda estreita com nossas tecnologias exclusivas:",

@@ -56,7 +56,7 @@ export const MarcasEcossistema = () => {
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">PMG Flexo Clicheria</h3>
 
               <p className="text-slate-300 text-sm font-light leading-relaxed mb-6">
-                Referência nacional em matrizes flexográficas de alta definição. Laboratórios climatizados, plataforma HRX com as tecnologias Everest® e Glaciar®, e operação 24 horas em Vinhedo-SP e Goiânia-GO.
+                Referência nacional em clichês em fotopolímero de alta definição. Laboratórios climatizados, plataforma HRX com as tecnologias Everest® e Glaciar®, e operação 24 horas em Vinhedo-SP e Goiânia-GO.
               </p>
 
               <div className="space-y-2.5 mb-8">
