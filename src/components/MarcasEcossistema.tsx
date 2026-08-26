@@ -111,7 +111,7 @@ export const MarcasEcossistema = () => {
               <div className="space-y-2.5 mb-8">
                 <div className="flex items-center gap-2 text-xs text-slate-700">
                   <Check size={14} className="text-blue-600 shrink-0" />
-                  <span>Tecnologias ESKO Digital Pixel+ e Kodak NX para ponto plano estável</span>
+                  <span>Tecnologias ESKO Digital Pixel+ e plataforma HRX para ponto plano estável</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-slate-700">
                   <Check size={14} className="text-blue-600 shrink-0" />

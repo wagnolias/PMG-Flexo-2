@@ -180,8 +180,8 @@ export const Hero = () => {
                   <div className="text-[10px] text-slate-400 uppercase font-semibold">Unidades</div>
                 </div>
                 <div>
-                  <div className="text-xl font-extrabold text-pmg-magenta">+70%</div>
-                  <div className="text-[10px] text-slate-400 uppercase font-semibold">Repetibilidade</div>
+                  <div className="text-xl font-extrabold text-pmg-magenta">30+</div>
+                  <div className="text-[10px] text-slate-400 uppercase font-semibold">Anos de Experiência</div>
                 </div>
                 <div>
                   <div className="text-xl font-extrabold text-blue-400">0,5%</div>

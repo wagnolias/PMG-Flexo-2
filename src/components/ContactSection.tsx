@@ -193,7 +193,7 @@ export const ContactSection = () => {
                         <option value="Tizza Tecnologia (Sistema Kaiaki)">Tizza Tecnologia (Sistema Kaiaki)</option>
                         <option value="VP Filmes (Distribuição BOPP / PEAD)">VP Filmes (Distribuição BOPP / PEAD)</option>
                         <option value="Provas GMG & Mockups em Substratos">Provas GMG & Mockups em Substratos</option>
-                        <option value="PMG Academy / Color Standard & Treinamento">PMG Academy / Color Standard & Treinamento</option>
+                        <option value="PMG Academy & Treinamento">PMG Academy & Treinamento</option>
                       </select>
                     </div>
 

@@ -168,7 +168,7 @@ export const QuemSomosOQueFazemos = () => {
       desc: "Tratamento técnico profissional dos arquivos gráficos recebidos de agências e marcas:",
       bullets: [
         "Preflight avançado, trapping micrométrico e separação técnica de cores (ECG / Expanded Gamut).",
-        "Color Standard PMG: Padronização de mínimos, nominais e máximos de densidade e ganho de ponto.",
+        "Padronização de mínimos, nominais e máximos de densidade e ganho de ponto.",
         "Softwares líderes homologados: HYBRID Software, PACKZ, CLOUDFLOW, ESKO e GMG."
       ],
       link: "#kaiaki",

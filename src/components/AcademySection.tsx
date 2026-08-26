@@ -129,7 +129,7 @@ export const AcademySection = () => {
             </h3>
             <div className="grid grid-cols-1 gap-3.5">
               {[
-                { title: "Pré-Impressão Avançada", desc: "Como preparar arquivos para garantir que 70% do sucesso nasça antes da máquina." },
+                { title: "Pré-Impressão Avançada", desc: "Como preparar arquivos para garantir que boa parte do sucesso nasça antes da máquina." },
                 { title: "Plataforma HRX & Reticulagem", desc: "Domínio das retículas de topo plano Everest® e K2® para degradês perfeitos e alta velocidade." },
                 { title: "Gestão Digital com Sistema Kaiaki", desc: "Autonomia total para gerenciar pedidos, RIP remoto e quantitativo de tintas." },
                 { title: "Manutenção & Conservação de Clichês", desc: "Técnicas de lavagem, secagem e armazenamento para prolongar a vida útil das chapas." }

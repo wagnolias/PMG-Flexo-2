@@ -65,7 +65,7 @@ export const Diferenciais = () => {
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-xs sm:text-sm font-bold text-pmg-magenta uppercase tracking-[0.3em] mb-4">Diferenciais Técnicos</h2>
           <p className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-pmg-navy mb-6">Por que escolher a PMG Flexo?</p>
-          <p className="text-lg sm:text-xl text-pmg-magenta font-bold italic">"Sabe por que 70% do sucesso da sua embalagem nasce na clicheria?"</p>
+          <p className="text-lg sm:text-xl text-pmg-magenta font-bold italic">"O sucesso da sua embalagem começa antes da máquina — nasce na clicheria."</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((f, i) => (

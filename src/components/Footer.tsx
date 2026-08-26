@@ -77,8 +77,7 @@ export const Footer = () => {
             <h4 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Programas & Plantas</h4>
             <ul className="space-y-2 text-slate-400">
               <li><a href="#academy" className="hover:text-white transition-colors">PMG Academy</a></li>
-              <li><a href="#academy" className="hover:text-white transition-colors">Padronização de Processos</a></li>
-              <li><a href="#academy" className="hover:text-white transition-colors">Color Standard (Min/Nom/Max)</a></li>
+              <li><a href="#academy" className="hover:text-white transition-colors">Padronização de Processos (Min/Nom/Max)</a></li>
               <li><a href="#operacao" className="hover:text-white transition-colors">Planta Vinhedo-SP (24h)</a></li>
               <li><a href="#operacao" className="hover:text-white transition-colors">Planta Goiânia-GO</a></li>
             </ul>

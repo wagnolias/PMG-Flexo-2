@@ -41,7 +41,7 @@ const BACKGROUND_IMAGES = [
   },
   {
     url: "https://i.ibb.co/Kcy2mZt4/IMG-3452.jpg",
-    caption: "Workshops Técnicos & Padronização Color Standard"
+    caption: "Workshops Técnicos & Padronização de Processos"
   },
   {
     url: "https://i.ibb.co/DHQMP3Gq/IMG-3451.jpg",

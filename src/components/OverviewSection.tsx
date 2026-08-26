@@ -118,7 +118,7 @@ export const OverviewSection = () => {
               </p>
               
               <p className="text-slate-300 text-sm leading-relaxed mb-6">
-                Transformamos arquivos digitais em matrizes perfeitas para impressão. Cuidamos de todo o processo técnico antes da máquina rodar, assegurando que 70% do sucesso da embalagem seja garantido ainda na fase de clicheria.
+                Transformamos arquivos digitais em matrizes perfeitas para impressão. Cuidamos de todo o processo técnico antes da máquina rodar, garantindo que boa parte do sucesso da embalagem já esteja assegurada ainda na fase de clicheria.
               </p>
 
               <div className="space-y-3 pt-4 border-t border-white/10 mb-6">

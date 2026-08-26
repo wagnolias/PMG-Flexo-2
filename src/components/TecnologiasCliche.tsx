@@ -40,7 +40,7 @@ export const TecnologiasCliche = () => {
               <div className="text-xs font-semibold text-amber-400 mb-4">Plataforma Atual de Gravação</div>
 
               <p className="text-slate-300 text-sm font-light leading-relaxed mb-6">
-                Com a descontinuação da chapa Kodak NX pelo mercado, a PMG avaliou as alternativas disponíveis e definiu o HRX como sua nova plataforma de gravação — compatível com CDI Esko® e as tecnologias Everest® e K2®.
+                Com a descontinuação da geração anterior de chapas pelo mercado, a PMG avaliou as alternativas disponíveis e definiu o HRX como sua nova plataforma de gravação — compatível com CDI Esko® e as tecnologias Everest® e K2®.
               </p>
 
               <div className="space-y-2.5 mb-6">

@@ -114,7 +114,7 @@ export const SummitAcademy = () => {
     },
     {
       url: "https://i.ibb.co/Q7cPF21t/IMG-20250508-121356.jpg",
-      title: "Demonstração de Padrões Color Standard",
+      title: "Demonstração de Padrões de Cor",
       category: "laboratorio",
       categoryLabel: "Laboratório & Cor",
       date: "08/05/2025",
@@ -370,11 +370,11 @@ export const SummitAcademy = () => {
           </motion.div>
         </div>
 
-        {/* Color Standard Box */}
+        {/* Padronização de Cor Box */}
         <div className="p-8 sm:p-10 rounded-3xl bg-pmg-navy text-white flex flex-col md:flex-row items-center justify-between gap-8 border border-white/10 shadow-xl">
           <div className="max-w-xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pmg-magenta/20 text-pmg-magenta text-xs font-bold uppercase tracking-wider mb-3 border border-pmg-magenta/30">
-              Color Standard
+              Padronização de Cor
             </div>
             <h3 className="text-2xl font-bold text-white mb-2">
               Padronização de cores sem parar a máquina
@@ -389,7 +389,7 @@ export const SummitAcademy = () => {
               href="#contato"
               className="bg-pmg-magenta hover:bg-pmg-magenta/90 text-white px-7 py-3.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all inline-flex items-center gap-2 shadow-lg shadow-pmg-magenta/20"
             >
-              <span>Implantar Color Standard</span>
+              <span>Solicitar Padronização de Cor</span>
               <ArrowRight size={13} />
             </a>
           </div>
