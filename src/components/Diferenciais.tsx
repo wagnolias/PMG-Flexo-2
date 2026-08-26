@@ -54,8 +54,8 @@ export const Diferenciais = () => {
     },
     {
       icon: Zap,
-      title: "Sustentabilidade & Redução de Setup",
-      description: "Processos otimizados que reduzem o desperdício de substrato plástico e tinta, garantindo conformidade com exigências ambientais modernas."
+      title: "Sustentabilidade Ambiental",
+      description: "Menos desperdício de plástico e tinta em cada produção, seguindo as novas regras ambientais para embalagens."
     }
   ];
 

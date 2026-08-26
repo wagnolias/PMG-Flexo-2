@@ -28,8 +28,8 @@ export const AcademySection = () => {
           {/* Background Image Overlay */}
           <div className="absolute inset-0 z-0">
             <img 
-              src="https://i.ibb.co/ZrPNcZN/Phoenix-09-Hyperrealistic-cinematic-wide-shot-of-a-highend-fut-3.jpg" 
-              alt="Futuristic Training Background" 
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200"
+              alt="Futuristic Training Background"
               className="w-full h-full object-cover opacity-30"
               referrerPolicy="no-referrer"
             />

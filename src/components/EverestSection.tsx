@@ -65,7 +65,7 @@ export const EverestSection = () => {
           >
             <div className="aspect-square rounded-3xl overflow-hidden border border-white/10 shadow-2xl relative group">
               <img 
-                src="https://i.ibb.co/sv3Cv2jG/lucid-origin-A-hyper-realistic-cinematic-interpretation-of-Mount-Everest-where-the-mountain-i-1.jpg" 
+                src="https://i.ibb.co/mVkGppLh/lucid-origin-A-hyper-realistic-cinematic-interpretation-of-Mount-Everest-where-the-mountain-i-0.jpg"
                 alt="Mount Everest" 
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 referrerPolicy="no-referrer"
