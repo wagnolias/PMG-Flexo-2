@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Layers, Droplets, Zap, Check } from 'lucide-react';
+import { Sparkles, Layers, Droplets, Zap, Check, Cpu } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export const TecnologiasCliche = () => {
@@ -21,9 +21,49 @@ export const TecnologiasCliche = () => {
           </p>
         </div>
 
-        {/* 3 Core Cliché Technologies */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
-          
+        {/* 4 Core Cliché Technologies */}
+        <div className="grid lg:grid-cols-4 gap-8 mb-16">
+
+          {/* 0. HRX */}
+          <div className="rounded-3xl bg-white/[0.03] border border-white/10 p-8 flex flex-col justify-between hover:border-amber-400/50 transition-all">
+            <div>
+              <div className="flex items-center justify-between mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-black">
+                  <Cpu size={22} />
+                </div>
+                <span className="text-[10px] font-bold uppercase tracking-widest text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full">
+                  Novo 2026
+                </span>
+              </div>
+
+              <h3 className="text-2xl font-bold text-white mb-1">HRX</h3>
+              <div className="text-xs font-semibold text-amber-400 mb-4">Plataforma Atual de Gravação</div>
+
+              <p className="text-slate-300 text-sm font-light leading-relaxed mb-6">
+                Com a descontinuação da chapa Kodak NX pelo mercado, a PMG avaliou as alternativas disponíveis e definiu o HRX como sua nova plataforma de gravação — compatível com CDI Esko® e as tecnologias Everest® e K2®.
+              </p>
+
+              <div className="space-y-2.5 mb-6">
+                <div className="flex items-center gap-2 text-xs text-slate-200">
+                  <Check size={14} className="text-amber-400 shrink-0" />
+                  <span>Filme térmico híbrido de fabricação japonesa</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs text-slate-200">
+                  <Check size={14} className="text-amber-400 shrink-0" />
+                  <span>Compatível com CDI Esko® e retículas Everest®/K2®</span>
+                </div>
+                <div className="flex items-center gap-2 text-xs text-slate-200">
+                  <Check size={14} className="text-amber-400 shrink-0" />
+                  <span>Usada tanto pela PMG Flexo quanto pela PMG Narrow</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-4 border-t border-white/10 text-center">
+              <span className="text-xs font-semibold text-amber-300">Chapa Atual da PMG Flexo</span>
+            </div>
+          </div>
+
           {/* 1. EVEREST */}
           <div className="rounded-3xl bg-white/[0.03] border border-white/10 p-8 flex flex-col justify-between hover:border-pmg-magenta/50 transition-all">
             <div>

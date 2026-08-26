@@ -56,7 +56,7 @@ export const MarcasEcossistema = () => {
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">PMG Flexo Clicheria</h3>
 
               <p className="text-slate-300 text-sm font-light leading-relaxed mb-6">
-                Referência nacional em matrizes flexográficas de alta definição. Laboratórios climatizados, tecnologias patenteadas (Everest® e Glaciar®) e operação 24 horas em Vinhedo-SP e Goiânia-GO.
+                Referência nacional em matrizes flexográficas de alta definição. Laboratórios climatizados, plataforma HRX com as tecnologias Everest® e Glaciar®, e operação 24 horas em Vinhedo-SP e Goiânia-GO.
               </p>
 
               <div className="space-y-2.5 mb-8">
@@ -208,7 +208,7 @@ export const MarcasEcossistema = () => {
               <h3 className="text-xl sm:text-2xl font-bold text-pmg-navy mb-3">VP Filmes</h3>
 
               <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                Distribuidora técnica de filmes flexíveis (BOPP, PE e PEAD) para convertedores. Estoque regulador, alta barreira e suporte em Blumenau-SC.
+                Distribuidora técnica de filmes flexíveis (BOPP e PEAD) para convertedores, sem volume mínimo obrigatório. Estoque regulador, alta barreira e suporte em Blumenau-SC.
               </p>
 
               <div className="space-y-2.5 mb-8">
@@ -218,7 +218,7 @@ export const MarcasEcossistema = () => {
                 </div>
                 <div className="flex items-center gap-2 text-xs text-slate-700">
                   <Check size={14} className="text-emerald-600 shrink-0" />
-                  <span>PE & PEAD: Filmes técnicos para laminação e selagem</span>
+                  <span>PEAD: Filmes técnicos para laminação e selagem</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-slate-700">
                   <Check size={14} className="text-emerald-600 shrink-0" />

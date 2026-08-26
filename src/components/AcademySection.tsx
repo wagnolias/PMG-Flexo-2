@@ -100,7 +100,7 @@ export const AcademySection = () => {
                 <div className="w-10 h-10 rounded-full bg-pmg-magenta/10 text-pmg-magenta flex items-center justify-center shrink-0 font-bold text-sm">01</div>
                 <div>
                   <h4 className="font-bold text-pmg-navy text-lg mb-1">Alinhamento Total</h4>
-                  <p className="text-slate-600 text-sm">Garantir que sua equipe aproveite 100% do potencial da Tecnologia Everest, reduzindo setups e eliminando o improviso em máquina.</p>
+                  <p className="text-slate-600 text-sm">Garantir que sua equipe aproveite 100% do potencial da plataforma HRX, reduzindo setups e eliminando o improviso em máquina.</p>
                 </div>
               </div>
               <div className="flex gap-4">
@@ -130,7 +130,7 @@ export const AcademySection = () => {
             <div className="grid grid-cols-1 gap-3.5">
               {[
                 { title: "Pré-Impressão Avançada", desc: "Como preparar arquivos para garantir que 70% do sucesso nasça antes da máquina." },
-                { title: "Tecnologia Everest & Reticulagem", desc: "Domínio das retículas de topo plano para degradês perfeitos e alta velocidade." },
+                { title: "Plataforma HRX & Reticulagem", desc: "Domínio das retículas de topo plano Everest® e K2® para degradês perfeitos e alta velocidade." },
                 { title: "Gestão Digital com Sistema Kaiaki", desc: "Autonomia total para gerenciar pedidos, RIP remoto e quantitativo de tintas." },
                 { title: "Manutenção & Conservação de Clichês", desc: "Técnicas de lavagem, secagem e armazenamento para prolongar a vida útil das chapas." }
               ].map((pilar, i) => (

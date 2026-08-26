@@ -60,7 +60,7 @@ export const Hero = () => {
             </h1>
             
             <p className="text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed">
-              Somos a <strong className="text-white font-semibold">PMG Flexo</strong>: fabricamos matrizes fotopolímeras com tecnologia de topo plano (<strong className="text-white">Tecnologia Everest</strong>), fornecemos o software de gestão <strong className="text-blue-400">Sistema Kaiaki</strong> e capacitamos equipes convertedoras com a <strong className="text-pmg-magenta">PMG Academy</strong>.
+              Somos a <strong className="text-white font-semibold">PMG Flexo</strong>: fabricamos matrizes fotopolímeras na <strong className="text-white">plataforma HRX</strong>, com as tecnologias de topo plano <strong className="text-white">Everest® e K2®</strong>, fornecemos o software de gestão <strong className="text-blue-400">Sistema Kaiaki</strong> e capacitamos equipes convertedoras com a <strong className="text-pmg-magenta">PMG Academy</strong>.
             </p>
 
             {/* Direct 3-Bullet Quick Pitch: Quem Somos, O Que Fazemos, O Que Vendemos */}

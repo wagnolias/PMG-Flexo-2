@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowUp, Instagram, Linkedin, Facebook } from 'lucide-react';
 
 export const Footer = () => {
   const scrollToTop = () => {
@@ -92,6 +92,35 @@ export const Footer = () => {
               <li>(19) 3030-3411 (Vinhedo-SP)</li>
               <li>(62) 3586-6690 (Goiânia-GO)</li>
             </ul>
+            <div className="flex items-center gap-3 mt-4">
+              <a
+                href="https://www.instagram.com/pmgflexo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram PMG Flexo"
+                className="w-8 h-8 bg-white/5 rounded-full flex items-center justify-center hover:bg-pmg-magenta transition-colors"
+              >
+                <Instagram size={15} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/pmgflexo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn PMG Flexo"
+                className="w-8 h-8 bg-white/5 rounded-full flex items-center justify-center hover:bg-pmg-magenta transition-colors"
+              >
+                <Linkedin size={15} />
+              </a>
+              <a
+                href="https://www.facebook.com/pmgflexo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook PMG Flexo"
+                className="w-8 h-8 bg-white/5 rounded-full flex items-center justify-center hover:bg-pmg-magenta transition-colors"
+              >
+                <Facebook size={15} />
+              </a>
+            </div>
           </div>
         </div>
 
