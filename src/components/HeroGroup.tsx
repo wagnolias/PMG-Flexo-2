@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'motion/react';
 const BACKGROUND_IMAGES = [
   {
     url: "https://i.ibb.co/DDRQf7Zk/IMG-20250819-154720.jpg",
-    caption: "Parque Gráfico & Gravadoras Digitais CDI Esko Pixel+"
+    caption: "Produção & Gravadoras Digitais CDI Esko Pixel+"
   },
   {
     url: "https://i.ibb.co/9kzXzQwh/IMG-20250819-154650.jpg",

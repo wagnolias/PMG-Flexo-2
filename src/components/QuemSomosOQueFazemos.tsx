@@ -268,7 +268,7 @@ export const QuemSomosOQueFazemos = () => {
                     A <strong>PMG Flexo</strong> é uma clicheria de alta tecnologia especializada no fornecimento de matrizes fotopolímeras digitais, pré-impressão e gerenciamento de cores para a indústria de <strong>embalagens flexíveis, rótulos e etiquetas</strong>.
                   </p>
                   <p className="text-slate-300 text-sm sm:text-base font-light leading-relaxed">
-                    Com parque gráfico de última geração e equipe de engenharia altamente qualificada, transformamos arquivos complexos em matrizes perfeitas, reduzindo o tempo de setup em máquina, eliminando paradas não planejadas e assegurando padrão fotográfico consistente.
+                    Com estrutura de produção de última geração e equipe de engenharia altamente qualificada, transformamos arquivos complexos em matrizes perfeitas, reduzindo o tempo de setup em máquina, eliminando paradas não planejadas e assegurando padrão fotográfico consistente.
                   </p>
                 </div>
 
@@ -384,7 +384,7 @@ export const QuemSomosOQueFazemos = () => {
               <div className="mb-12">
                 <div className="flex items-center justify-between mb-6">
                   <div>
-                    <span className="text-xs font-bold text-pmg-magenta uppercase tracking-wider block">Infraestrutura & Parque Gráfico</span>
+                    <span className="text-xs font-bold text-pmg-magenta uppercase tracking-wider block">Infraestrutura de Produção</span>
                     <h4 className="text-xl font-bold text-white">Laboratórios & Linhas de Produção</h4>
                   </div>
                   <span className="text-xs text-slate-400 font-light hidden sm:inline-block">Operação 24 Horas</span>

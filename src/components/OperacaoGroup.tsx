@@ -69,7 +69,7 @@ export const OperacaoGroup = () => {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
             <div>
               <span className="text-xs font-bold text-pmg-magenta uppercase tracking-widest block mb-2">Estrutura Real</span>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-white">Nossas Instalações & Parque Gráfico</h3>
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-white">Nossas Instalações & Produção</h3>
             </div>
             <p className="text-xs sm:text-sm text-slate-400 max-w-md font-light">
               Ambiente controlado, laboratórios climatizados e equipamentos de última geração para processamento de fotopolímeros digitais.
