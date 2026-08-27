@@ -27,9 +27,9 @@ export const AcademySection = () => {
         <div className="relative bg-pmg-navy rounded-[2.5rem] p-8 md:p-16 text-white flex flex-col lg:flex-row items-center gap-12 shadow-2xl mb-20 overflow-hidden">
           {/* Background Image Overlay */}
           <div className="absolute inset-0 z-0">
-            <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200"
-              alt="Futuristic Training Background"
+            <img
+              src="https://i.ibb.co/TBNRdKT4/IMG-20250507-090246.jpg"
+              alt="Treinamento PMG Academy"
               className="w-full h-full object-cover opacity-30"
               referrerPolicy="no-referrer"
             />

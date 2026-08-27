@@ -17,9 +17,9 @@ export const Hero = () => {
     <section id="home" className="relative min-h-screen flex flex-col justify-center pt-28 pb-16 overflow-hidden bg-pmg-navy">
       {/* Background with Industrial Atmosphere */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <img 
-          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2070" 
-          alt="Industrial Background Flexografia" 
+        <img
+          src="https://i.ibb.co/nN4hHsXw/IMG-20250508-121337.jpg"
+          alt="Tecnologia de fotopolímeros PMG Flexo"
           className="w-full h-full object-cover opacity-15"
           referrerPolicy="no-referrer"
         />
