@@ -26,7 +26,7 @@ export const MarcasEcossistema = () => {
             A força do ecossistema a serviço da sua impressão
           </h2>
           <p className="text-slate-600 text-base font-light">
-            A <strong>PMG Flexo</strong> atua em sinergia com frentes especializadas em banda estreita, software em nuvem e distribuição de filmes.
+            A <strong>PMG Flexo</strong> atua em banda larga, em sinergia com frentes especializadas em banda estreita, software em nuvem e distribuição de filmes.
           </p>
         </div>
 
