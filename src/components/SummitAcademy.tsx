@@ -118,7 +118,7 @@ export const SummitAcademy = () => {
       category: "laboratorio",
       categoryLabel: "Laboratório & Cor",
       date: "08/05/2025",
-      description: "Utilização das cartelas Mínimo | Nominal | Máximo para aprovação instantânea em máquina."
+      description: "Padronização de cor para aprovação instantânea em máquina."
     },
     {
       url: "https://i.ibb.co/LdpzrWZ9/IMG-20250508-155545.jpg",
@@ -379,7 +379,7 @@ export const SummitAcademy = () => {
               Padronização de cores sem parar a máquina
             </h3>
             <p className="text-slate-300 text-sm font-light leading-relaxed">
-              Economize até 60h mensais de máquina parada gerando novos padrões. A cartela Mínimo | Nominal | Máximo assegura tolerâncias objetivas de aprovação em linha de produção.
+              Menos tempo de máquina parada gerando padrões de cor, com tolerâncias objetivas de aprovação em linha de produção.
             </p>
           </div>
 

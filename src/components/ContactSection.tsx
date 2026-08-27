@@ -8,7 +8,7 @@ export const ContactSection = () => {
     empresa: '',
     email: '',
     telefone: '',
-    marcaInteresse: 'PMG Flexo (Banda Larga / HRX)',
+    marcaInteresse: 'PMG Flexo (Banda Larga)',
     mensagem: ''
   });
 
@@ -115,7 +115,7 @@ export const ContactSection = () => {
                         empresa: '',
                         email: '',
                         telefone: '',
-                        marcaInteresse: 'PMG Flexo (Banda Larga / HRX)',
+                        marcaInteresse: 'PMG Flexo (Banda Larga)',
                         mensagem: ''
                       });
                     }}
@@ -188,7 +188,7 @@ export const ContactSection = () => {
                         onChange={(e) => setFormData({ ...formData, marcaInteresse: e.target.value })}
                         className="w-full bg-slate-800 border border-white/15 rounded-xl px-4 py-2.5 text-xs text-white focus:border-pmg-magenta outline-none transition-all"
                       >
-                        <option value="PMG Flexo (Banda Larga / HRX)">PMG Flexo (Banda Larga / HRX)</option>
+                        <option value="PMG Flexo (Banda Larga)">PMG Flexo (Banda Larga)</option>
                         <option value="PMG Narrow (Banda Estreita / Rótulos)">PMG Narrow (Banda Estreita / Rótulos)</option>
                         <option value="Tizza Tecnologia (Sistema Kaiaki)">Tizza Tecnologia (Sistema Kaiaki)</option>
                         <option value="VP Filmes (Distribuição BOPP / PEAD)">VP Filmes (Distribuição BOPP / PEAD)</option>
