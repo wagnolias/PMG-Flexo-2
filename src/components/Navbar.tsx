@@ -2,39 +2,46 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, ArrowRight, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-type NavLink = { name: string; href: string };
-type NavItem = NavLink & { children?: NavLink[] };
+export type SectionKey = 'quem-somos' | 'solucoes' | 'ecossistema' | 'academy';
+
+type NavLink = { name: string; anchor: string };
+type NavItem = { name: string; section: SectionKey; children?: NavLink[] };
 
 const navItems: NavItem[] = [
-  { name: 'Quem Somos', href: '#apresentacao' },
+  { name: 'Quem Somos', section: 'quem-somos' },
   {
     name: 'Soluções',
-    href: '#cliches',
+    section: 'solucoes',
     children: [
-      { name: 'Tecnologias de Clichê', href: '#cliches' },
-      { name: 'Provas & Mockups', href: '#provas' },
-      { name: 'Sistema Kaiaki', href: '#kaiaki' },
+      { name: 'Tecnologias de Clichê', anchor: 'cliches' },
+      { name: 'Provas & Mockups', anchor: 'provas' },
+      { name: 'Sistema Kaiaki', anchor: 'kaiaki' },
     ],
   },
   {
     name: 'Ecossistema',
-    href: '#operacao',
+    section: 'ecossistema',
     children: [
-      { name: 'Operação & Plantas', href: '#operacao' },
-      { name: 'Marcas do Grupo', href: '#ecossistema' },
+      { name: 'Operação & Plantas', anchor: 'operacao' },
+      { name: 'Marcas do Grupo', anchor: 'ecossistema' },
     ],
   },
   {
     name: 'Academy & Eventos',
-    href: '#academy',
+    section: 'academy',
     children: [
-      { name: 'PMG Academy', href: '#academy' },
-      { name: 'Expo & Label 2026', href: '#expo-label' },
+      { name: 'PMG Academy', anchor: 'academy' },
+      { name: 'Expo & Label 2026', anchor: 'expo-label' },
     ],
   },
 ];
 
-export const Navbar = () => {
+interface NavbarProps {
+  activeSection: SectionKey;
+  onNavigate: (section: SectionKey, anchor?: string) => void;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDesktopMenu, setOpenDesktopMenu] = useState<string | null>(null);
@@ -65,7 +72,12 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center gap-6">
 
         {/* Brand Group with Official Logo */}
-        <a href="#home" className="flex items-center shrink-0 group" id="nav-logo">
+        <a
+          href="#home"
+          className="flex items-center shrink-0 group"
+          id="nav-logo"
+          onClick={(e) => { e.preventDefault(); onNavigate('quem-somos'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+        >
           <img
             src="https://i.ibb.co/NgZcFb4B/Logo-PMG-FLEXO-BRANCO-E-VERMELHO.png"
             alt="PMG Flexo Clicheria"
@@ -83,13 +95,15 @@ export const Navbar = () => {
               onMouseEnter={() => item.children && openMenu(item.name)}
               onMouseLeave={() => item.children && scheduleClose()}
             >
-              <a
-                href={item.href}
-                className="flex items-center gap-1 text-xs font-semibold text-slate-300 hover:text-white transition-colors uppercase tracking-wider whitespace-nowrap py-2"
+              <button
+                onClick={() => onNavigate(item.section, item.children?.[0]?.anchor)}
+                className={`flex items-center gap-1 text-xs font-semibold uppercase tracking-wider whitespace-nowrap py-2 transition-colors ${
+                  activeSection === item.section ? 'text-white' : 'text-slate-300 hover:text-white'
+                }`}
               >
                 {item.name}
                 {item.children && <ChevronDown size={13} className="opacity-60" />}
-              </a>
+              </button>
 
               {item.children && (
                 <AnimatePresence>
@@ -102,13 +116,13 @@ export const Navbar = () => {
                       className="absolute top-full left-0 mt-1 min-w-[220px] bg-pmg-navy border border-white/10 rounded-2xl shadow-2xl overflow-hidden py-2"
                     >
                       {item.children.map((child) => (
-                        <a
+                        <button
                           key={child.name}
-                          href={child.href}
-                          className="block px-4 py-2.5 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap"
+                          onClick={() => onNavigate(item.section, child.anchor)}
+                          className="block w-full text-left px-4 py-2.5 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap"
                         >
                           {child.name}
-                        </a>
+                        </button>
                       ))}
                     </motion.div>
                   )}
@@ -171,27 +185,25 @@ export const Navbar = () => {
                             className="overflow-hidden pl-4 flex flex-col"
                           >
                             {item.children.map((child) => (
-                              <a
+                              <button
                                 key={child.name}
-                                href={child.href}
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-sm text-slate-400 hover:text-pmg-magenta py-2 transition-colors"
+                                onClick={() => { onNavigate(item.section, child.anchor); setIsMobileMenuOpen(false); }}
+                                className="text-left text-sm text-slate-400 hover:text-pmg-magenta py-2 transition-colors"
                               >
                                 {child.name}
-                              </a>
+                              </button>
                             ))}
                           </motion.div>
                         )}
                       </AnimatePresence>
                     </>
                   ) : (
-                    <a
-                      href={item.href}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="block text-sm font-medium text-slate-200 hover:text-pmg-magenta py-2.5 transition-colors"
+                    <button
+                      onClick={() => { onNavigate(item.section); setIsMobileMenuOpen(false); }}
+                      className="block w-full text-left text-sm font-medium text-slate-200 hover:text-pmg-magenta py-2.5 transition-colors"
                     >
                       {item.name}
-                    </a>
+                    </button>
                   )}
                 </div>
               ))}
