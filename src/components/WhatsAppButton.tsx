@@ -3,7 +3,7 @@ import { MessageSquare } from 'lucide-react';
 
 export const WhatsAppButton = () => (
   <a 
-    href="https://wa.me/5547991479234?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20clich%C3%AAs%20e%20solu%C3%A7%C3%B5es%20da%20PMG%20Flexo." 
+    href="https://wa.me/5547991831636?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20clich%C3%AAs%20e%20solu%C3%A7%C3%B5es%20da%20PMG%20Flexo."
     target="_blank" 
     rel="noopener noreferrer"
     aria-label="Atendimento Comercial WhatsApp PMG Flexo"

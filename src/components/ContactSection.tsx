@@ -13,9 +13,9 @@ export const ContactSection = () => {
   });
 
   const units = [
-    { city: "Vinhedo - SP", phone: "(19) 3030-3411", role: "Matriz & Gravação 24h" },
-    { city: "Goiânia - GO", phone: "(62) 3586-6690", role: "Planta Centro-Oeste" },
-    { city: "Blumenau - SC", phone: "(47) 3308-6836", role: "VP Filmes / Sul" }
+    { city: "Vinhedo - SP", role: "Matriz & Gravação 24h" },
+    { city: "Goiânia - GO", role: "Planta Centro-Oeste" },
+    { city: "Blumenau - SC", role: "VP Filmes / Sul" }
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -51,15 +51,14 @@ export const ContactSection = () => {
                       <span>{u.city}</span>
                     </div>
                     <div className="text-[11px] text-slate-500">{u.role}</div>
-                    <div className="text-[11px] font-bold text-pmg-magenta mt-1">{u.phone}</div>
                   </div>
                 ))}
               </div>
 
               {/* Direct Channels */}
               <div className="space-y-3 p-5 bg-white rounded-2xl border border-slate-200/80 mb-6">
-                <a 
-                  href="mailto:diego@pmgflexo.com.br" 
+                <a
+                  href="mailto:suporte@pmgflexo.com.br"
                   className="flex items-center gap-3 text-slate-700 hover:text-pmg-magenta transition-colors"
                 >
                   <div className="w-9 h-9 bg-pmg-magenta/10 text-pmg-magenta rounded-xl flex items-center justify-center shrink-0">
@@ -67,14 +66,14 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <div className="text-[10px] text-slate-400 font-bold uppercase">E-mail Comercial</div>
-                    <div className="text-xs font-bold text-pmg-navy">diego@pmgflexo.com.br</div>
+                    <div className="text-xs font-bold text-pmg-navy">suporte@pmgflexo.com.br</div>
                   </div>
                 </a>
 
-                <a 
-                  href="https://wa.me/5547991479234" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://wa.me/5547991831636"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 text-slate-700 hover:text-emerald-600 transition-colors pt-2 border-t border-slate-100"
                 >
                   <div className="w-9 h-9 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center shrink-0">
@@ -82,7 +81,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <div className="text-[10px] text-slate-400 font-bold uppercase">WhatsApp Direto</div>
-                    <div className="text-xs font-bold text-pmg-navy">(47) 9 9147-9234</div>
+                    <div className="text-xs font-bold text-pmg-navy">(47) 9 9183-1636</div>
                   </div>
                 </a>
               </div>

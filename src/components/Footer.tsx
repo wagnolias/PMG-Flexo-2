@@ -93,10 +93,8 @@ export const Footer = () => {
           <div>
             <h4 className="font-bold text-white uppercase tracking-wider mb-3 text-[11px]">Contato Técnico</h4>
             <ul className="space-y-2 text-slate-400">
-              <li>diego@pmgflexo.com.br</li>
-              <li>(47) 9 9147-9234</li>
-              <li>(19) 3030-3411 (Vinhedo-SP)</li>
-              <li>(62) 3586-6690 (Goiânia-GO)</li>
+              <li>suporte@pmgflexo.com.br</li>
+              <li>(47) 9 9183-1636</li>
             </ul>
             <div className="flex items-center gap-3 mt-4">
               <a
