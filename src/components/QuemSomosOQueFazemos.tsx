@@ -206,7 +206,7 @@ export const QuemSomosOQueFazemos = () => {
           </h2>
           
           <p className="text-slate-300 text-sm sm:text-base font-light max-w-xl mb-8">
-            Selecione uma das abas abaixo para entender nossa estrutura operacional e nossas soluções especializadas para a indústria de embalagens.
+            Escolha uma aba: nossa estrutura ou nossas soluções.
           </p>
 
           {/* Clean Dual Tabs Selector */}

@@ -256,7 +256,7 @@ export const MarcasEcossistema = () => {
               Da pré-impressão ao substrato: integração total
             </h3>
             <p className="text-slate-300 text-xs sm:text-sm font-light leading-relaxed">
-              O ecossistema garante que o convertedor tenha clichês de padrão mundial com a <strong>PMG Flexo</strong>, matrizes especializadas em banda estreita com a <strong>PMG Narrow</strong>, gestão digital em nuvem com o <strong>Kaiaki</strong> e fornecimento ágil de filmes com a <strong>VP Filmes</strong>.
+              Clichê com a <strong>PMG Flexo</strong>, banda estreita com a <strong>PMG Narrow</strong>, gestão digital com o <strong>Kaiaki</strong>, filmes com a <strong>VP Filmes</strong>.
             </p>
           </div>
 
