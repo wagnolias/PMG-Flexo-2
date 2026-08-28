@@ -15,7 +15,6 @@ export const ContactSection = () => {
   const units = [
     { city: "Vinhedo - SP", phone: "(19) 3030-3411", role: "Matriz & Gravação 24h" },
     { city: "Goiânia - GO", phone: "(62) 3586-6690", role: "Planta Centro-Oeste" },
-    { city: "Valinhos - SP", phone: "(19) 3327-6473", role: "Suporte Técnico" },
     { city: "Blumenau - SC", phone: "(47) 3308-6836", role: "VP Filmes / Sul" }
   ];
 
