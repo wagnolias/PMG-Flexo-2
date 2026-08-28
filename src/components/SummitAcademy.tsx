@@ -33,28 +33,12 @@ export const SummitAcademy = () => {
       description: "Alinhamento das diretrizes de qualidade, controle de ganho de ponto e engenharia de matrizes."
     },
     {
-      url: "https://i.ibb.co/20RHyZsZ/IMG-20250507-092246.jpg",
-      title: "Módulo Teórico: Variáveis de Chão de Fábrica",
-      category: "workshops",
-      categoryLabel: "Workshops Técnicos",
-      date: "07/05/2025",
-      description: "Discussão aprofundada sobre viscosidade, fitas dupla-face, lineatura de anilox e pressão de impressão."
-    },
-    {
       url: "https://i.ibb.co/Fqhs9cSR/IMG-20250507-092305.jpg",
       title: "Análise de Casos Reais de Convertedores",
       category: "workshops",
       categoryLabel: "Workshops Técnicos",
       date: "07/05/2025",
       description: "Estudo de casos de setup, redução de refugo e resolução de problemas de empastamento."
-    },
-    {
-      url: "https://i.ibb.co/d0wKNc91/IMG-20250507-102509.jpg",
-      title: "Tecnologia de Fotopolímeros & Ponto Plano",
-      category: "laboratorio",
-      categoryLabel: "Laboratório & Matrizes",
-      date: "07/05/2025",
-      description: "Compreensão da física do ponto plano (Flat Top Dot) e reprodução de micro-texturas na chapa."
     },
     {
       url: "https://i.ibb.co/DgvXwjJ7/IMG-20250507-110520.jpg",
@@ -119,14 +103,6 @@ export const SummitAcademy = () => {
       categoryLabel: "Laboratório & Cor",
       date: "08/05/2025",
       description: "Padronização de cor para aprovação instantânea em máquina."
-    },
-    {
-      url: "https://i.ibb.co/LdpzrWZ9/IMG-20250508-155545.jpg",
-      title: "Laboratório de Pré-Impressão Aplicada",
-      category: "laboratorio",
-      categoryLabel: "Laboratório Prático",
-      date: "08/05/2025",
-      description: "Análise de trapping, overprint e reticulagem em arquivos reais dos convertedores participantes."
     },
     {
       url: "https://i.ibb.co/0Rvz8zF8/IMG-20250508-174938.jpg",

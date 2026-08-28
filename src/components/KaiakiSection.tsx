@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Database, Zap, Layers, Globe, ArrowRight, Sparkles } from 'lucide-react';
-import { motion } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 
 const SCREENS = [
+  {
+    src: `${import.meta.env.BASE_URL}assets/kaiaki-login.png`,
+    label: 'Login',
+    caption: 'Acesso Seguro ao Sistema'
+  },
   {
     src: `${import.meta.env.BASE_URL}assets/kaiaki-trabalhos.png`,
     label: 'Painel de Produção',
@@ -17,6 +22,13 @@ const SCREENS = [
 
 export const KaiakiSection = () => {
   const [activeScreen, setActiveScreen] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveScreen((prev) => (prev + 1) % SCREENS.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [activeScreen]);
 
   return (
     <section id="kaiaki" className="py-24 bg-white border-b border-slate-200 scroll-mt-20">
@@ -92,11 +104,20 @@ export const KaiakiSection = () => {
                   </button>
                 ))}
               </div>
-              <img
-                src={SCREENS[activeScreen].src}
-                className="w-full h-auto rounded-2xl border border-slate-200 shadow-sm"
-                alt={`Kaiaki - ${SCREENS[activeScreen].label}`}
-              />
+              <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-2xl border border-slate-200 shadow-sm bg-white overflow-hidden">
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={SCREENS[activeScreen].src}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.4 }}
+                    src={SCREENS[activeScreen].src}
+                    className="absolute inset-0 w-full h-full object-contain p-3"
+                    alt={`Kaiaki - ${SCREENS[activeScreen].label}`}
+                  />
+                </AnimatePresence>
+              </div>
               <div className="mt-4 flex items-center justify-between text-xs text-slate-500 px-2">
                 <span>{SCREENS[activeScreen].caption}</span>
                 <span className="font-semibold text-[#009FE3]">Acesso 100% Web</span>

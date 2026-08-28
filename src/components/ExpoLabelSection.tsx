@@ -31,24 +31,6 @@ export const ExpoLabelSection: React.FC = () => {
       category: "Relacionamento com Convertedores",
       description: "Recepção de gráficas convertedoras, brand owners e parceiros estratégicos do setor de embalagens."
     },
-    {
-      url: "https://i.ibb.co/gLmzcv8V/IMG-4500.jpg",
-      title: "Soluções Digitais & Sistema Kaiaki",
-      category: "Software & Automação Web",
-      description: "Apresentação da plataforma de RIP em nuvem, aprovação de arquivos online e gestão de fluxos de trabalho."
-    },
-    {
-      url: "https://i.ibb.co/XrVQpT4q/IMG-4586.jpg",
-      title: "Equipe Técnica & Comercial PMG",
-      category: "Engenharia & Consultoria",
-      description: "Especialistas da PMG à disposição para consultorias de ganho de ponto, anilox e padronização operacional."
-    },
-    {
-      url: "https://i.ibb.co/S4nyFXrB/IMG-4588.jpg",
-      title: "Inovação para Banda Larga & Estreita",
-      category: "Excelência Flexográfica",
-      description: "Conexão completa desde a distribuição de filmes técnicos (VP Filmes) até o fornecimento de matrizes de alto padrão."
-    }
   ];
 
   return (

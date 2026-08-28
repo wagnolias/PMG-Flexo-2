@@ -118,14 +118,14 @@ export const OperacaoGroup = () => {
 
             <div className="group relative rounded-2xl overflow-hidden border border-white/10 bg-slate-800/50 aspect-[4/3]">
               <img 
-                src="https://i.ibb.co/DPX2z1vg/Captura-de-tela-2025-09-30-164544.png" 
-                alt="Engenharia de Pré-Impressão e Fluxo Digital"
+                src="https://i.ibb.co/DPX2z1vg/Captura-de-tela-2025-09-30-164544.png"
+                alt="Gerenciamento de Cores e Calibração Colorimétrica"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex flex-col justify-end p-4">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-purple-400 mb-0.5">Pré-Impressão Digital</span>
-                <span className="text-xs font-semibold text-white">Engenharia de Arquivos & RIP</span>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-purple-400 mb-0.5">Gerenciamento de Cores</span>
+                <span className="text-xs font-semibold text-white">Calibração & Provas Colorimétricas</span>
               </div>
             </div>
           </div>

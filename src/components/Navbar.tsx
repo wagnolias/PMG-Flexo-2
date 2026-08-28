@@ -1,10 +1,45 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowRight } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Menu, X, ArrowRight, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+
+type NavLink = { name: string; href: string };
+type NavItem = NavLink & { children?: NavLink[] };
+
+const navItems: NavItem[] = [
+  { name: 'Quem Somos', href: '#apresentacao' },
+  {
+    name: 'Soluções',
+    href: '#cliches',
+    children: [
+      { name: 'Tecnologias de Clichê', href: '#cliches' },
+      { name: 'Provas & Mockups', href: '#provas' },
+      { name: 'Sistema Kaiaki', href: '#kaiaki' },
+    ],
+  },
+  {
+    name: 'Ecossistema',
+    href: '#operacao',
+    children: [
+      { name: 'Operação & Plantas', href: '#operacao' },
+      { name: 'Marcas do Grupo', href: '#ecossistema' },
+    ],
+  },
+  {
+    name: 'Academy & Eventos',
+    href: '#academy',
+    children: [
+      { name: 'PMG Academy', href: '#academy' },
+      { name: 'Expo & Label 2026', href: '#expo-label' },
+    ],
+  },
+];
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openDesktopMenu, setOpenDesktopMenu] = useState<string | null>(null);
+  const [openMobileMenu, setOpenMobileMenu] = useState<string | null>(null);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 30);
@@ -12,15 +47,14 @@ export const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: 'Quem Somos', href: '#quem-somos' },
-    { name: 'O Que Fazemos', href: '#o-que-fazemos' },
-    { name: 'Tecnologias', href: '#cliches' },
-    { name: 'Provas & Mockups', href: '#provas' },
-    { name: 'Sistema Kaiaki', href: '#kaiaki' },
-    { name: 'PMG Academy', href: '#academy' },
-    { name: 'Expo & Label', href: '#expo-label' },
-  ];
+  const openMenu = (name: string) => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    setOpenDesktopMenu(name);
+  };
+
+  const scheduleClose = () => {
+    closeTimer.current = setTimeout(() => setOpenDesktopMenu(null), 150);
+  };
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -42,14 +76,45 @@ export const Navbar = () => {
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-5 xl:gap-6">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-xs font-semibold text-slate-300 hover:text-white transition-colors uppercase tracking-wider whitespace-nowrap"
+          {navItems.map((item) => (
+            <div
+              key={item.name}
+              className="relative"
+              onMouseEnter={() => item.children && openMenu(item.name)}
+              onMouseLeave={() => item.children && scheduleClose()}
             >
-              {link.name}
-            </a>
+              <a
+                href={item.href}
+                className="flex items-center gap-1 text-xs font-semibold text-slate-300 hover:text-white transition-colors uppercase tracking-wider whitespace-nowrap py-2"
+              >
+                {item.name}
+                {item.children && <ChevronDown size={13} className="opacity-60" />}
+              </a>
+
+              {item.children && (
+                <AnimatePresence>
+                  {openDesktopMenu === item.name && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -6 }}
+                      transition={{ duration: 0.15 }}
+                      className="absolute top-full left-0 mt-1 min-w-[220px] bg-pmg-navy border border-white/10 rounded-2xl shadow-2xl overflow-hidden py-2"
+                    >
+                      {item.children.map((child) => (
+                        <a
+                          key={child.name}
+                          href={child.href}
+                          className="block px-4 py-2.5 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap"
+                        >
+                          {child.name}
+                        </a>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              )}
+            </div>
           ))}
 
           <a
@@ -80,23 +145,60 @@ export const Navbar = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="w-full bg-pmg-navy/98 backdrop-blur-xl border-t border-white/10 px-6 py-6 lg:hidden shadow-2xl"
+            className="w-full bg-pmg-navy/98 backdrop-blur-xl border-t border-white/10 px-6 py-6 lg:hidden shadow-2xl max-h-[75vh] overflow-y-auto"
           >
-            <div className="flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-sm font-medium text-slate-200 hover:text-pmg-magenta py-1 transition-colors"
-                >
-                  {link.name}
-                </a>
+            <div className="flex flex-col gap-1">
+              {navItems.map((item) => (
+                <div key={item.name}>
+                  {item.children ? (
+                    <>
+                      <button
+                        onClick={() => setOpenMobileMenu(openMobileMenu === item.name ? null : item.name)}
+                        className="w-full flex items-center justify-between text-sm font-medium text-slate-200 hover:text-pmg-magenta py-2.5 transition-colors"
+                      >
+                        <span>{item.name}</span>
+                        <ChevronDown
+                          size={16}
+                          className={`transition-transform ${openMobileMenu === item.name ? 'rotate-180' : ''}`}
+                        />
+                      </button>
+                      <AnimatePresence>
+                        {openMobileMenu === item.name && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: 'auto', opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            className="overflow-hidden pl-4 flex flex-col"
+                          >
+                            {item.children.map((child) => (
+                              <a
+                                key={child.name}
+                                href={child.href}
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="text-sm text-slate-400 hover:text-pmg-magenta py-2 transition-colors"
+                              >
+                                {child.name}
+                              </a>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </>
+                  ) : (
+                    <a
+                      href={item.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block text-sm font-medium text-slate-200 hover:text-pmg-magenta py-2.5 transition-colors"
+                    >
+                      {item.name}
+                    </a>
+                  )}
+                </div>
               ))}
               <a
                 href="#contato"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="bg-pmg-magenta text-white px-6 py-3 rounded-full font-bold text-center text-xs uppercase tracking-wider mt-1 shadow-lg shadow-pmg-magenta/20"
+                className="bg-pmg-magenta text-white px-6 py-3 rounded-full font-bold text-center text-xs uppercase tracking-wider mt-3 shadow-lg shadow-pmg-magenta/20"
               >
                 Falar com Especialista
               </a>

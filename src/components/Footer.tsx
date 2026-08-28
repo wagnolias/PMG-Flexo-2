@@ -8,13 +8,6 @@ export const Footer = () => {
 
   return (
     <footer className="relative bg-pmg-navy text-white border-t border-white/10 pt-16 pb-12 overflow-hidden">
-      <img
-        src="https://i.ibb.co/NgZcFb4B/Logo-PMG-FLEXO-BRANCO-E-VERMELHO.png"
-        alt=""
-        aria-hidden="true"
-        referrerPolicy="no-referrer"
-        className="absolute -right-16 top-1/2 -translate-y-1/2 w-[42rem] max-w-none opacity-[0.04] pointer-events-none select-none"
-      />
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Top Minimal Strip */}
