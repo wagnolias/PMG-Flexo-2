@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Database, Zap, Layers, Globe, ArrowRight, Sparkles } from 'lucide-react';
 import { motion } from 'motion/react';
 
+const SCREENS = [
+  {
+    src: `${import.meta.env.BASE_URL}assets/kaiaki-trabalhos.png`,
+    label: 'Painel de Produção',
+    caption: 'Trabalhos por Status (OS, Montagem, Gravação...)'
+  },
+  {
+    src: `${import.meta.env.BASE_URL}assets/kaiaki-aprovacao.png`,
+    label: 'Fila de Aprovação',
+    caption: 'Aprovação Remota de Artes e Provas'
+  }
+];
+
 export const KaiakiSection = () => {
+  const [activeScreen, setActiveScreen] = useState(0);
+
   return (
     <section id="kaiaki" className="py-24 bg-white border-b border-slate-200 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -62,14 +77,28 @@ export const KaiakiSection = () => {
           {/* Right Column: Clean App Preview */}
           <div className="lg:col-span-6">
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-4 sm:p-6 shadow-xl">
-              <img 
-                src="https://i.ibb.co/RkSG3WGX/kaiaki1.png" 
-                className="w-full h-auto rounded-2xl border border-slate-200 shadow-sm" 
-                alt="Kaiaki Interface PMG" 
-                referrerPolicy="no-referrer"
+              <div className="flex items-center gap-2 mb-4">
+                {SCREENS.map((screen, i) => (
+                  <button
+                    key={screen.label}
+                    onClick={() => setActiveScreen(i)}
+                    className={`px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider transition-all ${
+                      activeScreen === i
+                        ? 'bg-[#009FE3] text-white shadow-sm'
+                        : 'bg-slate-200/70 text-slate-500 hover:bg-slate-200'
+                    }`}
+                  >
+                    {screen.label}
+                  </button>
+                ))}
+              </div>
+              <img
+                src={SCREENS[activeScreen].src}
+                className="w-full h-auto rounded-2xl border border-slate-200 shadow-sm"
+                alt={`Kaiaki - ${SCREENS[activeScreen].label}`}
               />
               <div className="mt-4 flex items-center justify-between text-xs text-slate-500 px-2">
-                <span>Dashboard de Pré-Impressão</span>
+                <span>{SCREENS[activeScreen].caption}</span>
                 <span className="font-semibold text-[#009FE3]">Acesso 100% Web</span>
               </div>
             </div>
