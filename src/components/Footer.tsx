@@ -96,7 +96,17 @@ export const Footer = () => {
         </div>
 
         <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
-          <span>© 2026 PMG Flexo · CNPJ em processo de atualização</span>
+          <span>
+            © 2026 PMG Flexo · CNPJ em processo de atualização · Desenvolvido pela{' '}
+            <a
+              href="https://wagnolias.github.io/PMG-Tizza/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              Tizza Tecnologia
+            </a>
+          </span>
           <button onClick={scrollToTop} className="hover:text-white transition-colors">
             Clicheria técnica em fotopolímero
           </button>
