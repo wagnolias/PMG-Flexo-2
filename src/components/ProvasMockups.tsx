@@ -3,7 +3,7 @@ import { Printer, Package, ArrowRight, Check, FileCheck } from 'lucide-react';
 
 export const ProvasMockups = () => {
   return (
-    <section id="provas" className="py-24 bg-slate-900 text-white relative overflow-hidden border-b border-white/10 scroll-mt-20">
+    <section id="provas" className="py-24 bg-pmg-navy text-white relative overflow-hidden border-b border-white/10 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         {/* Header */}

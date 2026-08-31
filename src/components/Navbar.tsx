@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, ArrowRight, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-export type SectionKey = 'quem-somos' | 'solucoes' | 'ecossistema' | 'academy';
+export type SectionKey = 'quem-somos' | 'solucoes' | 'ecossistema' | 'academy' | 'blog';
 
 type NavLink = { name: string; anchor: string };
 type NavItem = { name: string; section: SectionKey; children?: NavLink[] };
@@ -34,6 +34,7 @@ const navItems: NavItem[] = [
       { name: 'Expo & Label 2026', anchor: 'expo-label' },
     ],
   },
+  { name: 'Blog', section: 'blog' },
 ];
 
 interface NavbarProps {

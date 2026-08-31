@@ -4,14 +4,6 @@ import { motion, AnimatePresence } from 'motion/react';
 
 const BACKGROUND_IMAGES = [
   {
-    url: "https://i.ibb.co/DDRQf7Zk/IMG-20250819-154720.jpg",
-    caption: "Produção & Gravadoras Digitais CDI Esko Pixel+"
-  },
-  {
-    url: "https://i.ibb.co/9kzXzQwh/IMG-20250819-154650.jpg",
-    caption: "Laboratório Climatizado de Gravação a Laser HD"
-  },
-  {
     url: "https://i.ibb.co/5xSDVZnj/IMG-20250819-154716.jpg",
     caption: "Engenharia de Pré-Impressão & Gerenciamento de Cores"
   },
@@ -25,7 +17,7 @@ const BACKGROUND_IMAGES = [
   },
   {
     url: "https://i.ibb.co/p6ZSJK8Y/IMG-20250819-154535.jpg",
-    caption: "Produção Contínua 24h para Banda Larga e Estreita"
+    caption: "Produção Contínua 24h na Planta de Vinhedo-SP"
   },
   {
     url: "https://i.ibb.co/RpHpsjV7/IMG-20250819-154505.jpg",
@@ -49,7 +41,7 @@ const BACKGROUND_IMAGES = [
   },
   {
     url: "https://i.ibb.co/9HbLRNSN/IMG-3450.jpg",
-    caption: "Tecnologia de Ponto Plano Everest® & Glaciar®"
+    caption: "Retículas de Ponto Plano Everest® & Glaciar®"
   },
   {
     url: "https://i.ibb.co/vxCT7ktr/IMG-3449.jpg",
@@ -61,7 +53,7 @@ const BACKGROUND_IMAGES = [
   },
   {
     url: "https://i.ibb.co/ksCFPTd0/IMG-3447.jpg",
-    caption: "Alta Performance & Repetibilidade em Impressão"
+    caption: "Precisão & Repetibilidade em Impressão"
   }
 ];
 
@@ -135,7 +127,7 @@ export const HeroGroup = () => {
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
-              Clichês de alta performance para <span className="text-pmg-magenta">impressão flexográfica</span>.
+              Clichês de precisão para <span className="text-pmg-magenta">impressão flexográfica</span>.
             </h1>
 
             {/* Concise Purpose Statement */}
@@ -175,6 +167,7 @@ export const HeroGroup = () => {
                 <div className="text-xs text-slate-400 mt-0.5">Retícula Everest®</div>
               </div>
             </div>
+            <p className="text-[11px] text-slate-500 mt-3">*Gravação ininterrupta na planta de Vinhedo-SP.</p>
           </motion.div>
 
           {/* Right Column: Clean Cliché Highlights Card */}
@@ -207,7 +200,7 @@ export const HeroGroup = () => {
                     </div>
                     <div>
                       <div className="flex items-center gap-1.5">
-                        <h2 className="text-sm font-bold text-white group-hover:text-pmg-magenta transition-colors">Everest® HD</h2>
+                        <h2 className="text-sm font-bold text-white group-hover:text-pmg-magenta transition-colors">Retícula Everest® HD</h2>
                         <span className="text-[10px] text-pmg-magenta bg-pmg-magenta/10 px-1.5 py-0.5 rounded font-bold">200 LPI</span>
                       </div>
                       <p className="text-xs text-slate-400">Padrão rotogravura com transições a zero</p>

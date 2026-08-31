@@ -14,6 +14,7 @@ import { OperacaoGroup } from './components/OperacaoGroup';
 import { SummitAcademy } from './components/SummitAcademy';
 import { ExpoLabelSection } from './components/ExpoLabelSection';
 import { MarcasEcossistema } from './components/MarcasEcossistema';
+import { Blog } from './components/Blog';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { WhatsAppButton } from './components/WhatsAppButton';
@@ -36,6 +37,10 @@ export default function App() {
   useEffect(() => {
     const resolveHash = () => {
       const hash = window.location.hash.replace('#', '');
+      if (hash === 'blog' || hash.startsWith('blog/')) {
+        setActiveSection('blog');
+        return;
+      }
       if (hash && HASH_TO_SECTION[hash]) {
         pendingAnchor.current = hash;
         setActiveSection(HASH_TO_SECTION[hash]);
@@ -99,6 +104,8 @@ export default function App() {
             <ExpoLabelSection />
           </>
         )}
+
+        {activeSection === 'blog' && <Blog />}
 
         <ContactSection />
       </main>

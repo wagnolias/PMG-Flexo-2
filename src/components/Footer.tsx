@@ -22,6 +22,19 @@ export const Footer = () => {
             <p className="text-sm text-slate-400 font-light leading-relaxed mb-5">
               Clicheria técnica em fotopolímero para embalagens flexíveis, rótulos e etiquetas.
             </p>
+            <a
+              href="https://wagnolias.github.io/PMG-Group-A/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 mb-5 group w-fit"
+            >
+              <span className="text-[11px] text-slate-400 font-light">Uma empresa do ecossistema</span>
+              <img
+                src={`${import.meta.env.BASE_URL}assets/pmg-group-white.png`}
+                alt="PMG Group"
+                className="h-4 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity"
+              />
+            </a>
             <div className="flex flex-wrap gap-2">
               <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-slate-300 bg-white/5 border border-white/10 rounded-full px-3 py-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
@@ -40,6 +53,7 @@ export const Footer = () => {
               <li><a href="#cliches" className="hover:text-white transition-colors">Soluções</a></li>
               <li><a href="#operacao" className="hover:text-white transition-colors">Ecossistema</a></li>
               <li><a href="#academy" className="hover:text-white transition-colors">Academy & Eventos</a></li>
+              <li><a href="#blog" className="hover:text-white transition-colors">Blog</a></li>
               <li><a href="#contato" className="hover:text-white transition-colors">Contato</a></li>
             </ul>
           </div>

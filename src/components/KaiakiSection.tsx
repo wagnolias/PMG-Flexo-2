@@ -67,12 +67,12 @@ export const KaiakiSection = () => {
               </div>
 
               <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div className="text-xs font-bold text-pmg-navy mb-0.5">Tracking de OS</div>
+                <div className="text-xs font-bold text-pmg-navy mb-0.5">Rastreamento de OS</div>
                 <div className="text-[11px] text-slate-500">Status da gravação em tempo real</div>
               </div>
 
               <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div className="text-xs font-bold text-pmg-navy mb-0.5">Cloud Storage</div>
+                <div className="text-xs font-bold text-pmg-navy mb-0.5">Armazenamento em Nuvem</div>
                 <div className="text-[11px] text-slate-500">Acervo técnico seguro em nuvem</div>
               </div>
             </div>

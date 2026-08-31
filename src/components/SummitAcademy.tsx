@@ -49,36 +49,12 @@ export const SummitAcademy = () => {
       description: "Metodologia para estabilização de máquina e acerto de cores em menos de 15 minutos."
     },
     {
-      url: "https://i.ibb.co/sdVYCY1L/IMG-20250507-112956.jpg",
-      title: "Dinâmica Interativa em Sala de Aula",
-      category: "workshops",
-      categoryLabel: "Workshops Técnicos",
-      date: "07/05/2025",
-      description: "Troca de experiências entre impressores, supervisores de gráfica e engenheiros da PMG."
-    },
-    {
-      url: "https://i.ibb.co/20snKDXw/IMG-20250507-164318.jpg",
-      title: "Medição Espectral & Controle Delta E",
-      category: "laboratorio",
-      categoryLabel: "Laboratório & Medição",
-      date: "07/05/2025",
-      description: "Uso de espectrofotômetros para validação de tolerâncias colorimétricas e aprovação digital de provas."
-    },
-    {
       url: "https://i.ibb.co/qLy9Fcrg/IMG-20250508-090818.jpg",
       title: "Workshop Prático de Diagnóstico de Falhas",
       category: "laboratorio",
       categoryLabel: "Laboratório Prático",
       date: "08/05/2025",
       description: "Identificação e eliminação de marcas de engrenagem, halo de pressão, pinholing e ganho excessivo."
-    },
-    {
-      url: "https://i.ibb.co/ZzF4W0Qj/IMG-20250508-094410.jpg",
-      title: "Auditoria de Anilox & Transferência de Tinta",
-      category: "laboratorio",
-      categoryLabel: "Laboratório & Medição",
-      date: "08/05/2025",
-      description: "Inspeção microscópica de células de anilox e cálculo de volume BCM para alta densidade."
     },
     {
       url: "https://i.ibb.co/Cs3xRbJ7/IMG-20250508-120118.jpg",
@@ -89,28 +65,36 @@ export const SummitAcademy = () => {
       description: "Aproximação direta entre a equipe de pré-impressão PMG e os operadores gráficos."
     },
     {
-      url: "https://i.ibb.co/nN4hHsXw/IMG-20250508-121337.jpg",
-      title: "Padronização de Curvas de Compensação",
-      category: "laboratorio",
-      categoryLabel: "Laboratório & Curvas",
-      date: "08/05/2025",
-      description: "Aplicação das curvas Everest® e Glaciar® para linearização precisa entre arte e chapa."
-    },
-    {
-      url: "https://i.ibb.co/Q7cPF21t/IMG-20250508-121356.jpg",
-      title: "Demonstração de Padrões de Cor",
-      category: "laboratorio",
-      categoryLabel: "Laboratório & Cor",
-      date: "08/05/2025",
-      description: "Padronização de cor para aprovação instantânea em máquina."
-    },
-    {
       url: "https://i.ibb.co/0Rvz8zF8/IMG-20250508-174938.jpg",
       title: "Encerramento de Turma & Certificação Técnica",
       category: "certificacao",
       categoryLabel: "Certificação & Formatura",
       date: "08/05/2025",
       description: "Entrega de certificados e encerramento oficial do ciclo de treinamento técnico PMG Academy."
+    },
+    {
+      url: "https://i.ibb.co/0ypmNxcL/Whats-App-Image-2026-08-05-at-15-53-40.jpg",
+      title: "Turma Acompanha Apresentação sobre Processo-Chave",
+      category: "workshops",
+      categoryLabel: "Workshops Técnicos",
+      date: "05/08/2026",
+      description: "Equipe reunida para o módulo de Processo-Chave do PMG Academy, com apresentação teórica antes da etapa prática."
+    },
+    {
+      url: "https://i.ibb.co/5Wc6FFJD/Whats-App-Image-2026-08-05-at-15-53-41.jpg",
+      title: "Instrutor Conduz Módulo de Processo-Chave",
+      category: "workshops",
+      categoryLabel: "Workshops Técnicos",
+      date: "05/08/2026",
+      description: "Explicação dos pontos críticos de controle do processo produtivo para os participantes da turma."
+    },
+    {
+      url: "https://i.ibb.co/23Z2NK0k/Whats-App-Image-2026-08-05-at-16-09-22.jpg",
+      title: "Encerramento da Turma & Entrega de Kits PMG Academy",
+      category: "certificacao",
+      categoryLabel: "Certificação & Formatura",
+      date: "05/08/2026",
+      description: "Foto de grupo ao final do treinamento, com entrega de kits personalizados aos participantes."
     }
   ];
 
@@ -155,13 +139,13 @@ export const SummitAcademy = () => {
               <p className="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-4">Capacitação Prática para Convertedores</p>
 
               <p className="text-slate-600 text-sm font-light leading-relaxed mb-6">
-                Módulos ministrados nas instalações modelo da PMG ou <em>in-company</em>, alinhando operadores de impressora, supervisores e equipes de pré-impressão.
+                Módulos ministrados nas instalações modelo da PMG ou diretamente nas instalações do convertedor, alinhando operadores de impressora, supervisores e equipes de pré-impressão.
               </p>
 
               <div className="space-y-3 mb-8">
                 <div className="flex items-start gap-2.5 text-xs text-slate-700">
                   <Check size={16} className="text-pmg-magenta shrink-0 mt-0.5" />
-                  <span>Conservação, manuseio e montagem correta de fotopolímeros Everest® e Glaciar®</span>
+                  <span>Conservação, manuseio e montagem correta de fotopolímeros gravados com retícula Everest® e Glaciar®</span>
                 </div>
                 <div className="flex items-start gap-2.5 text-xs text-slate-700">
                   <Check size={16} className="text-pmg-magenta shrink-0 mt-0.5" />
@@ -213,7 +197,7 @@ export const SummitAcademy = () => {
                 </div>
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200/80 flex items-center justify-between shadow-xs">
                   <span className="text-xs font-bold text-pmg-navy">3. Repetibilidade em Tiragens</span>
-                  <span className="text-[11px] text-slate-500 font-medium">Alta performance contínua</span>
+                  <span className="text-[11px] text-slate-500 font-medium">Estabilidade em grandes tiragens</span>
                 </div>
               </div>
             </div>

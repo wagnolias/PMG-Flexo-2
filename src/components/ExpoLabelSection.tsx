@@ -22,7 +22,7 @@ export const ExpoLabelSection: React.FC = () => {
     {
       url: "https://i.ibb.co/Zys776T/IMG-4493.jpg",
       title: "Demonstração Técnica & Amostras",
-      category: "Tecnologias Everest® & Glaciar®",
+      category: "Retículas Everest® & Glaciar®",
       description: "Exibição de matrizes fotopolímeras gravadas a 200 LPI e impressos com simulação de cor certificada GMG."
     },
     {
@@ -34,7 +34,7 @@ export const ExpoLabelSection: React.FC = () => {
   ];
 
   return (
-    <section id="expo-label" className="py-20 sm:py-28 bg-slate-900 text-white relative overflow-hidden border-t border-b border-white/10">
+    <section id="expo-label" className="py-20 sm:py-28 bg-pmg-navy text-white relative overflow-hidden border-t border-b border-white/10">
       {/* Subtle Background Glows */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-pmg-magenta/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
@@ -133,9 +133,9 @@ export const ExpoLabelSection: React.FC = () => {
               <Sparkles size={22} />
             </div>
             <div>
-              <h4 className="text-lg font-bold text-white">Inovação e proximidade constante com o mercado</h4>
+              <h4 className="text-lg font-bold text-white">Tecnologia aplicada e proximidade constante com o mercado</h4>
               <p className="text-xs sm:text-sm text-slate-300 font-light">
-                Leve a excelência apresentada na feira para a linha de produção da sua convertedora.
+                Leve as soluções apresentadas na feira para a linha de produção da sua convertedora.
               </p>
             </div>
           </div>

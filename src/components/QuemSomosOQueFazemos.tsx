@@ -39,12 +39,12 @@ const QUEM_SOMOS_SLIDES = [
   },
   {
     url: "https://i.ibb.co/DHQMP3Gq/IMG-3451.jpg",
-    title: "Processamento & Gravação 24 Horas",
-    subtitle: "Capacidade de Produção Ininterrupta"
+    title: "Processamento & Gravação 24 Horas em Vinhedo-SP",
+    subtitle: "Capacidade de Produção Ininterrupta na Matriz"
   },
   {
     url: "https://i.ibb.co/9HbLRNSN/IMG-3450.jpg",
-    title: "Tecnologia Everest® & Ponto Plano",
+    title: "Retícula Everest® & Ponto Plano",
     subtitle: "Matrizes Fotopolímeras para Altas Tiragens"
   }
 ];
@@ -89,7 +89,7 @@ export const QuemSomosOQueFazemos = () => {
     { year: "2020", title: "Esko Pixel+", desc: "Avanço tecnológico com retículas digitais e automação em pré-impressão." },
     { year: "2024", title: "Nova Sede & Expansão", desc: "Planta modelo com laboratórios climatizados e ampliação de capacidade." },
     { year: "2025", title: "Retícula Everest® 200 LPI", desc: "Pioneirismo em gravação digital de 200 LPI com ponto plano e padrão rotogravura." },
-    { year: "2026", title: "Expo & Label 2026", desc: "Presença de destaque na feira e consolidação do ecossistema integrado com gravação 24h." }
+    { year: "2026", title: "Expo & Label 2026", desc: "Presença de destaque na feira e consolidação do ecossistema integrado com gravação 24h em Vinhedo-SP." }
   ];
 
   const unidades = [
@@ -109,7 +109,7 @@ export const QuemSomosOQueFazemos = () => {
     {
       icon: <Cpu className="text-pmg-magenta" size={22} />,
       title: "Tecnologia de Gravação de Ponta",
-      desc: "6 Gravadoras digitais de última geração (CDI Esko Pixel+) operando com as retículas mais avançadas do mercado."
+      desc: "6 Gravadoras digitais de última geração (CDI Esko Pixel+) operando com retículas de alta resolução, até 200 LPI."
     },
     {
       icon: <ShieldCheck className="text-blue-400" size={22} />,
@@ -118,8 +118,8 @@ export const QuemSomosOQueFazemos = () => {
     },
     {
       icon: <Clock className="text-emerald-400" size={22} />,
-      title: "Operação 24 Horas",
-      desc: "Prontidão operacional ininterrupta para garantir prazos de entrega ultra-ágeis e atendimento a urgências da indústria gráfica."
+      title: "Operação 24h em Vinhedo-SP",
+      desc: "Gravação ininterrupta na planta de Vinhedo-SP, para garantir prazos de entrega ágeis e atendimento a urgências da indústria gráfica."
     },
     {
       icon: <Target className="text-purple-400" size={22} />,
@@ -169,7 +169,7 @@ export const QuemSomosOQueFazemos = () => {
       bullets: [
         "Preflight avançado, trapping micrométrico e separação técnica de cores (ECG / Expanded Gamut).",
         "Padronização de mínimos, nominais e máximos de densidade e ganho de ponto.",
-        "Softwares líderes homologados: HYBRID Software, PACKZ, CLOUDFLOW, ESKO e GMG."
+        "Softwares homologados: HYBRID Software, PACKZ, CLOUDFLOW, ESKO e GMG."
       ],
       link: "#kaiaki",
       linkText: "Explorar Automação & Pré-Impressão"
@@ -192,7 +192,7 @@ export const QuemSomosOQueFazemos = () => {
   ];
 
   return (
-    <section id="apresentacao" className="py-20 bg-slate-900 text-white relative border-b border-white/10 scroll-mt-20">
+    <section id="apresentacao" className="py-20 bg-pmg-navy text-white relative border-b border-white/10 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Navigation Tabs Header */}
@@ -259,10 +259,10 @@ export const QuemSomosOQueFazemos = () => {
               <div className="grid lg:grid-cols-12 gap-8 items-center bg-white/[0.03] border border-white/10 rounded-3xl p-8 sm:p-12 mb-10">
                 <div className="lg:col-span-7">
                   <span className="text-xs font-bold text-pmg-magenta uppercase tracking-widest block mb-2">
-                    Liderança & Especialização Flexográfica
+                    Especialização Flexográfica
                   </span>
                   <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-4">
-                    Clicheria técnica dedicada à máxima performance gráfica
+                    Clicheria técnica dedicada à performance gráfica de precisão
                   </h3>
                   <p className="text-slate-300 text-sm sm:text-base font-light leading-relaxed mb-4">
                     A <strong>PMG Flexo</strong> é uma clicheria de alta tecnologia especializada no fornecimento de matrizes fotopolímeras digitais, pré-impressão e gerenciamento de cores para a indústria de <strong>embalagens flexíveis, rótulos e etiquetas</strong>.
@@ -387,7 +387,7 @@ export const QuemSomosOQueFazemos = () => {
                     <span className="text-xs font-bold text-pmg-magenta uppercase tracking-wider block">Infraestrutura de Produção</span>
                     <h4 className="text-xl font-bold text-white">Laboratórios & Linhas de Produção</h4>
                   </div>
-                  <span className="text-xs text-slate-400 font-light hidden sm:inline-block">Operação 24 Horas</span>
+                  <span className="text-xs text-slate-400 font-light hidden sm:inline-block">Operação 24 Horas · Vinhedo-SP</span>
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
