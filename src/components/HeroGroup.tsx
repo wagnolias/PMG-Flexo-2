@@ -119,10 +119,12 @@ export const HeroGroup = () => {
             className="lg:col-span-7"
           >
             {/* Tagline */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-slate-300 tracking-wide mb-6">
-              <span className="w-2 h-2 rounded-full bg-pmg-magenta animate-pulse"></span>
-              <span className="text-white font-bold">PMG FLEXO</span>
-              <span className="text-slate-400">| Clicheria & Pré-Impressão de Alta Definição</span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 tracking-wide mb-6">
+              <span className="w-2 h-2 rounded-full bg-pmg-magenta animate-pulse shrink-0"></span>
+              <div className="flex flex-col leading-tight">
+                <span className="text-white font-bold text-xs">PMG FLEXO</span>
+                <span className="text-slate-400 text-[11px]">Clicheria & Pré-Impressão de Alta Definição</span>
+              </div>
             </div>
 
             {/* Main Headline */}
@@ -132,7 +134,7 @@ export const HeroGroup = () => {
 
             {/* Concise Purpose Statement */}
             <p className="text-lg sm:text-xl text-slate-300 font-light leading-relaxed max-w-xl mb-8">
-              Ajudamos convertedores de embalagens flexíveis e rótulos a imprimir com fidelidade fotográfica, menor consumo de tinta e zero desperdício no setup.
+              Ajudamos convertedores de embalagens flexíveis e rótulos a alcançar alta fidelidade de impressão, estabilidade de cor e previsibilidade em máquina — com menor consumo de tinta e setups mais eficientes.
             </p>
 
             {/* CTA Actions */}
