@@ -113,7 +113,7 @@ export const ProdutosSolucoes = () => {
       icon: GraduationCap,
       title: 'PMG Academy - Treinamento In-Company',
       subtitle: 'Capacitação Técnica e Certificação Operacional',
-      description: 'Programas de treinamento práticos e teóricos ministrados por especialistas da PMG Flexo diretamente na sua fábrica ou em nossos centros de excelência.',
+      description: 'Programas de treinamento práticos e teóricos ministrados por especialistas da PMG Flexo diretamente na sua fábrica ou em nossas unidades.',
       specs: [
         'Treinamentos mensais com certificação para operadores',
         'Módulos de acerto de máquina, anilox e dosagem de tinta',

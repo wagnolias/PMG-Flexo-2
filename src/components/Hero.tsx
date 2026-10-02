@@ -39,7 +39,7 @@ export const Hero = () => {
         >
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pmg-magenta/20 border border-pmg-magenta/40 text-pmg-magenta text-xs font-bold uppercase tracking-widest">
             <Sparkles size={14} className="animate-pulse" />
-            <span>Clicheria de Alta Performance</span>
+            <span>Clicheria e Pré-impressão Flexográfica</span>
           </div>
           <div className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/70 text-xs font-medium">
             <MapPin size={13} className="text-pmg-magenta" />

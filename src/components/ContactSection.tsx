@@ -21,6 +21,13 @@ export const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.nome || !formData.email) return;
+    const texto = [
+      `Olá! Meu nome é ${formData.nome}${formData.empresa ? ` (${formData.empresa})` : ''}.`,
+      `Interesse: ${formData.marcaInteresse}.`,
+      `E-mail: ${formData.email}${formData.telefone ? ` | Tel: ${formData.telefone}` : ''}`,
+      formData.mensagem ? `\n${formData.mensagem}` : ''
+    ].filter(Boolean).join('\n');
+    window.open(`https://wa.me/5547991831636?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
     setFormSubmitted(true);
   };
 
@@ -101,9 +108,9 @@ export const ContactSection = () => {
                   <div className="w-14 h-14 rounded-full bg-pmg-magenta/20 text-pmg-magenta mx-auto flex items-center justify-center mb-4">
                     <CheckCircle2 size={30} />
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Mensagem enviada com sucesso!</h3>
+                  <h3 className="text-2xl font-bold text-white mb-2">Falta só enviar no WhatsApp!</h3>
                   <p className="text-slate-300 text-sm max-w-sm mx-auto mb-6">
-                    Agradecemos o contato, <strong>{formData.nome}</strong>. Nossa equipe técnica responderá prontamente.
+                    Obrigado, <strong>{formData.nome}</strong>. Abrimos o WhatsApp da PMG com a sua mensagem pronta: é só tocar em enviar e nossa equipe técnica responde por lá.
                   </p>
                   <button
                     onClick={() => {

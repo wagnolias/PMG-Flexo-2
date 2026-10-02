@@ -61,11 +61,11 @@ export const OverviewSection = () => {
 
               <h3 className="text-2xl font-bold text-white mb-3">Quem Somos</h3>
               <p className="text-sm font-semibold text-pmg-magenta uppercase tracking-wider mb-4">
-                Clicheria líder em alta performance técnica
+                Engenharia e processo a serviço da repetibilidade
               </p>
               
               <p className="text-slate-300 text-sm leading-relaxed mb-6">
-                A PMG Flexo é uma das principais empresas de pré-impressão e produção de clichês flexográficos do Brasil. Unimos engenharia avançada, processos industriais rigorosamente controlados e laboratórios climatizados para entregar a mais alta qualidade gráfica.
+                A PMG Flexo é uma das principais empresas de pré-impressão e produção de clichês flexográficos do Brasil. Unimos engenharia avançada, processos industriais rigorosamente controlados e laboratórios climatizados para entregar qualidade gráfica com repetibilidade.
               </p>
 
               <div className="space-y-3 pt-4 border-t border-white/10 mb-6">
