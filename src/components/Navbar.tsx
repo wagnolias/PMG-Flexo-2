@@ -80,7 +80,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => 
           onClick={(e) => { e.preventDefault(); onNavigate('quem-somos'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
         >
           <img
-            src="https://i.ibb.co/NgZcFb4B/Logo-PMG-FLEXO-BRANCO-E-VERMELHO.png"
+            src={`${import.meta.env.BASE_URL}assets/img/logo-pmg-flexo-branco-e-vermelho.png`}
             alt="PMG Flexo Clicheria"
             className="h-9 sm:h-10 w-auto object-contain"
             referrerPolicy="no-referrer"

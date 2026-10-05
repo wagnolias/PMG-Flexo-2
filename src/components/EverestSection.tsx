@@ -8,7 +8,7 @@ export const EverestSection = () => {
       {/* Background Everest Image with Overlay */}
       <div className="absolute top-0 right-0 w-full md:w-1/2 h-full opacity-20 pointer-events-none">
         <img 
-          src="https://i.ibb.co/mVkGppLh/lucid-origin-A-hyper-realistic-cinematic-interpretation-of-Mount-Everest-where-the-mountain-i-0.jpg" 
+          src={`${import.meta.env.BASE_URL}assets/img/lucid-origin-a-hyper-realistic-cinematic-f9c94a.jpg`} 
           alt="Mount Everest Peak" 
           className="w-full h-full object-cover grayscale brightness-150"
           referrerPolicy="no-referrer"
@@ -65,7 +65,7 @@ export const EverestSection = () => {
           >
             <div className="aspect-square rounded-3xl overflow-hidden border border-white/10 shadow-2xl relative group">
               <img 
-                src="https://i.ibb.co/mVkGppLh/lucid-origin-A-hyper-realistic-cinematic-interpretation-of-Mount-Everest-where-the-mountain-i-0.jpg"
+                src={`${import.meta.env.BASE_URL}assets/img/lucid-origin-a-hyper-realistic-cinematic-f9c94a.jpg`}
                 alt="Mount Everest" 
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 referrerPolicy="no-referrer"

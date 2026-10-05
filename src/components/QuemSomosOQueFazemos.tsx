@@ -23,27 +23,27 @@ import { motion, AnimatePresence } from 'motion/react';
 
 const QUEM_SOMOS_SLIDES = [
   {
-    url: "https://i.ibb.co/ymW6f30m/IMG-3453.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-3453.jpg`,
     title: "Parque Fabril & Gravadoras Digitais",
     subtitle: "Clicheria Técnica de Alta Resolução"
   },
   {
-    url: "https://i.ibb.co/Ng2yS9Hq/IMG-3454.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-3454.jpg`,
     title: "Laboratório Climatizado & Matrizes",
     subtitle: "Controle Rigoroso de Temperatura e Umidade"
   },
   {
-    url: "https://i.ibb.co/Kcy2mZt4/IMG-3452.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-3452.jpg`,
     title: "Engenharia de Pré-Impressão & Colorimetria",
     subtitle: "Tratamento Técnico e Separação de Cores"
   },
   {
-    url: "https://i.ibb.co/DHQMP3Gq/IMG-3451.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-3451.jpg`,
     title: "Processamento & Gravação 24 Horas em Vinhedo-SP",
     subtitle: "Capacidade de Produção Ininterrupta na Matriz"
   },
   {
-    url: "https://i.ibb.co/9HbLRNSN/IMG-3450.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-3450.jpg`,
     title: "Retícula Everest® & Ponto Plano",
     subtitle: "Matrizes Fotopolímeras para Altas Tiragens"
   }
@@ -392,13 +392,14 @@ export const QuemSomosOQueFazemos = () => {
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                   {[
-                    { url: "https://i.ibb.co/DDRQf7Zk/IMG-20250819-154720.jpg", title: "Gravadoras Digitais CDI Esko Pixel+" },
-                    { url: "https://i.ibb.co/5xSDVZnj/IMG-20250819-154716.jpg", title: "Central de Pré-Impressão & RIP" },
-                    { url: "https://i.ibb.co/ccTQjcQ2/IMG-20250819-154549.jpg", title: "Lavagem & Processamento Automático" },
-                    { url: "https://i.ibb.co/ZpzYQMKS/IMG-20250819-154538.jpg", title: "Controle e Inspeção Óptica Digital" },
-                    { url: "https://i.ibb.co/p6ZSJK8Y/IMG-20250819-154535.jpg", title: "Linhas de Acabamento & Expedição" },
-                    { url: "https://i.ibb.co/RpHpsjV7/IMG-20250819-154505.jpg", title: "Área de Matrizes Fotopolímeras" },
-                    { url: "https://i.ibb.co/DHQMP3Gq/IMG-3451.jpg", title: "Engenharia Técnica de Clicheria" }
+                    { url: `${import.meta.env.BASE_URL}assets/img/img-20250819-154720.jpg`, title: "Gravadoras Digitais CDI Esko Pixel+" },
+                    { url: `${import.meta.env.BASE_URL}assets/img/laboratorio-mesa-chapas.jpg`, title: "Laboratório Climatizado de Gravação" },
+                    { url: `${import.meta.env.BASE_URL}assets/img/img-20250819-154716.jpg`, title: "Central de Pré-Impressão & RIP" },
+                    { url: `${import.meta.env.BASE_URL}assets/img/img-20250819-154549.jpg`, title: "Lavagem & Processamento Automático" },
+                    { url: `${import.meta.env.BASE_URL}assets/img/inspecao-lupa-detalhe.jpg`, title: "Controle e Inspeção Óptica Digital" },
+                    { url: `${import.meta.env.BASE_URL}assets/img/img-20250819-154535.jpg`, title: "Linhas de Acabamento & Expedição" },
+                    { url: `${import.meta.env.BASE_URL}assets/img/img-20250819-154505.jpg`, title: "Área de Matrizes Fotopolímeras" },
+                    { url: `${import.meta.env.BASE_URL}assets/img/img-3451.jpg`, title: "Engenharia Técnica de Clicheria" }
                   ].map((item, idx) => (
                     <div 
                       key={idx} 

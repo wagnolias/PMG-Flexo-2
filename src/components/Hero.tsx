@@ -18,7 +18,7 @@ export const Hero = () => {
       {/* Background with Industrial Atmosphere */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <img
-          src="https://i.ibb.co/nN4hHsXw/IMG-20250508-121337.jpg"
+          src={`${import.meta.env.BASE_URL}assets/img/img-20250508-121337.jpg`}
           alt="Tecnologia de fotopolímeros PMG Flexo"
           className="w-full h-full object-cover opacity-15"
           referrerPolicy="no-referrer"

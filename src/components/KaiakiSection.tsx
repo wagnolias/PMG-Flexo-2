@@ -39,7 +39,7 @@ export const KaiakiSection = () => {
           <div className="lg:col-span-6">
             <div className="inline-flex items-center gap-3 px-3.5 py-1.5 rounded-full bg-slate-900 border border-[#009FE3]/30 text-[#009FE3] text-xs font-semibold uppercase tracking-wider mb-5">
               <img 
-                src="https://i.ibb.co/WvtGBSxN/Logo-Tizza-BRANCO-01-1024x461.png" 
+                src={`${import.meta.env.BASE_URL}assets/img/logo-tizza-branco-01-1024x461.png`} 
                 alt="Tizza Tecnologia" 
                 className="h-4 w-auto object-contain"
                 referrerPolicy="no-referrer"

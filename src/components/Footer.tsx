@@ -14,7 +14,7 @@ export const Footer = () => {
           {/* Brand block */}
           <div className="lg:col-span-1">
             <img
-              src="https://i.ibb.co/NgZcFb4B/Logo-PMG-FLEXO-BRANCO-E-VERMELHO.png"
+              src={`${import.meta.env.BASE_URL}assets/img/logo-pmg-flexo-branco-e-vermelho.png`}
               alt="PMG Flexo"
               className="h-9 w-auto object-contain mb-4"
               referrerPolicy="no-referrer"

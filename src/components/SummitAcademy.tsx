@@ -17,7 +17,7 @@ export const SummitAcademy = () => {
 
   const academyPhotos: AcademyPhoto[] = [
     {
-      url: "https://i.ibb.co/TBNRdKT4/IMG-20250507-090246.jpg",
+      url: `${import.meta.env.BASE_URL}assets/img/img-20250507-090246.jpg`,
       title: "Recepção & Abertura da Turma PMG Academy",
       category: "workshops",
       categoryLabel: "Abertura & Metodologia",
@@ -25,7 +25,7 @@ export const SummitAcademy = () => {
       description: "Boas-vindas aos convertedores e início do programa de imersão técnica em variáveis de impressão flexográfica."
     },
     {
-      url: "https://i.ibb.co/v4pMxsv0/IMG-20250507-091306.jpg",
+      url: `${import.meta.env.BASE_URL}assets/img/img-20250507-091306.jpg`,
       title: "Apresentação Institucional & Metodologia",
       category: "workshops",
       categoryLabel: "Workshops Técnicos",
@@ -33,7 +33,7 @@ export const SummitAcademy = () => {
       description: "Alinhamento das diretrizes de qualidade, controle de ganho de ponto e engenharia de matrizes."
     },
     {
-      url: "https://i.ibb.co/Fqhs9cSR/IMG-20250507-092305.jpg",
+      url: `${import.meta.env.BASE_URL}assets/img/img-20250507-092305.jpg`,
       title: "Análise de Casos Reais de Convertedores",
       category: "workshops",
       categoryLabel: "Workshops Técnicos",
@@ -41,7 +41,7 @@ export const SummitAcademy = () => {
       description: "Estudo de casos de setup, redução de refugo e resolução de problemas de empastamento."
     },
     {
-      url: "https://i.ibb.co/DgvXwjJ7/IMG-20250507-110520.jpg",
+      url: `${import.meta.env.BASE_URL}assets/img/img-20250507-110520.jpg`,
       title: "Treinamento Prático: Setup Rápido & Curvas",
       category: "workshops",
       categoryLabel: "Workshops Técnicos",
@@ -49,7 +49,7 @@ export const SummitAcademy = () => {
       description: "Metodologia para estabilização de máquina e acerto de cores em menos de 15 minutos."
     },
     {
-      url: "https://i.ibb.co/qLy9Fcrg/IMG-20250508-090818.jpg",
+      url: `${import.meta.env.BASE_URL}assets/img/img-20250508-090818.jpg`,
       title: "Workshop Prático de Diagnóstico de Falhas",
       category: "laboratorio",
       categoryLabel: "Laboratório Prático",
@@ -57,7 +57,7 @@ export const SummitAcademy = () => {
       description: "Identificação e eliminação de marcas de engrenagem, halo de pressão, pinholing e ganho excessivo."
     },
     {
-      url: "https://i.ibb.co/Cs3xRbJ7/IMG-20250508-120118.jpg",
+      url: `${import.meta.env.BASE_URL}assets/img/img-20250508-120118.jpg`,
       title: "Integração Técnica com convertedores",
       category: "certificacao",
       categoryLabel: "Integração & Equipes",
@@ -65,7 +65,7 @@ export const SummitAcademy = () => {
       description: "Aproximação direta entre a equipe de pré-impressão PMG e os operadores gráficos."
     },
     {
-      url: "https://i.ibb.co/0Rvz8zF8/IMG-20250508-174938.jpg",
+      url: `${import.meta.env.BASE_URL}assets/img/img-20250508-174938.jpg`,
       title: "Encerramento de Turma & Certificação Técnica",
       category: "certificacao",
       categoryLabel: "Certificação & Formatura",
@@ -73,7 +73,7 @@ export const SummitAcademy = () => {
       description: "Entrega de certificados e encerramento oficial do ciclo de treinamento técnico PMG Academy."
     },
     {
-      url: "https://i.ibb.co/0ypmNxcL/Whats-App-Image-2026-08-05-at-15-53-40.jpg",
+      url: `${import.meta.env.BASE_URL}assets/img/whatsapp-image-2026-08-05-at-15-53-40.jpg`,
       title: "Turma Acompanha Apresentação sobre Processo-Chave",
       category: "workshops",
       categoryLabel: "Workshops Técnicos",
@@ -81,7 +81,7 @@ export const SummitAcademy = () => {
       description: "Equipe reunida para o módulo de Processo-Chave do PMG Academy, com apresentação teórica antes da etapa prática."
     },
     {
-      url: "https://i.ibb.co/5Wc6FFJD/Whats-App-Image-2026-08-05-at-15-53-41.jpg",
+      url: `${import.meta.env.BASE_URL}assets/img/whatsapp-image-2026-08-05-at-15-53-41.jpg`,
       title: "Instrutor Conduz Módulo de Processo-Chave",
       category: "workshops",
       categoryLabel: "Workshops Técnicos",
@@ -89,7 +89,7 @@ export const SummitAcademy = () => {
       description: "Explicação dos pontos críticos de controle do processo produtivo para os participantes da turma."
     },
     {
-      url: "https://i.ibb.co/23Z2NK0k/Whats-App-Image-2026-08-05-at-16-09-22.jpg",
+      url: `${import.meta.env.BASE_URL}assets/img/whatsapp-image-2026-08-05-at-16-09-22.jpg`,
       title: "Encerramento da Turma & Entrega de Kits PMG Academy",
       category: "certificacao",
       categoryLabel: "Certificação & Formatura",

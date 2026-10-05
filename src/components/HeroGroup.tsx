@@ -4,55 +4,55 @@ import { motion, AnimatePresence } from 'motion/react';
 
 const BACKGROUND_IMAGES = [
   {
-    url: "https://i.ibb.co/5xSDVZnj/IMG-20250819-154716.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-20250819-154716.jpg`,
     caption: "Engenharia de Pré-Impressão & Gerenciamento de Cores"
   },
   {
-    url: "https://i.ibb.co/ccTQjcQ2/IMG-20250819-154549.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-20250819-154549.jpg`,
     caption: "Processamento & Lavagem Automática de Matrizes"
   },
   {
-    url: "https://i.ibb.co/ZpzYQMKS/IMG-20250819-154538.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-20250819-154538.jpg`,
     caption: "Controle de Qualidade Espectral & Inspeção Micrométrica"
   },
   {
-    url: "https://i.ibb.co/p6ZSJK8Y/IMG-20250819-154535.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-20250819-154535.jpg`,
     caption: "Produção Contínua 24h na Planta de Vinhedo-SP"
   },
   {
-    url: "https://i.ibb.co/RpHpsjV7/IMG-20250819-154505.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-20250819-154505.jpg`,
     caption: "Planta Industrial Modelo PMG Flexo"
   },
   {
-    url: "https://i.ibb.co/ymW6f30m/IMG-3453.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-3453.jpg`,
     caption: "Centro de Capacitação & Treinamento PMG Academy"
   },
   {
-    url: "https://i.ibb.co/Ng2yS9Hq/IMG-3454.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-3454.jpg`,
     caption: "Espaço de Engenharia & Consultoria para Convertedores"
   },
   {
-    url: "https://i.ibb.co/Kcy2mZt4/IMG-3452.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-3452.jpg`,
     caption: "Workshops Técnicos & Padronização de Processos"
   },
   {
-    url: "https://i.ibb.co/DHQMP3Gq/IMG-3451.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-3451.jpg`,
     caption: "Estrutura Integrada de Pré-Impressão & Clicheria"
   },
   {
-    url: "https://i.ibb.co/9HbLRNSN/IMG-3450.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-3450.jpg`,
     caption: "Retículas de Ponto Plano Everest® & Glaciar®"
   },
   {
-    url: "https://i.ibb.co/vxCT7ktr/IMG-3449.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-3449.jpg`,
     caption: "Atendimento Técnico & Suporte ao Convertedor"
   },
   {
-    url: "https://i.ibb.co/Z6zw367m/IMG-3446.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-3446.jpg`,
     caption: "Auditoria de Anilox, Curvas e Ganho de Ponto"
   },
   {
-    url: "https://i.ibb.co/ksCFPTd0/IMG-3447.jpg",
+    url: `${import.meta.env.BASE_URL}assets/img/img-3447.jpg`,
     caption: "Precisão & Repetibilidade em Impressão"
   }
 ];

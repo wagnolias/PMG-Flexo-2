@@ -79,7 +79,7 @@ export const OperacaoGroup = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="group relative rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 aspect-[4/3]">
               <img
-                src="https://i.ibb.co/hRWC5VtR/IMG-2182.jpg"
+                src={`${import.meta.env.BASE_URL}assets/img/img-2182.jpg`}
                 alt="Parque Fabril e Linha de Gravação PMG Flexo"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
@@ -92,8 +92,8 @@ export const OperacaoGroup = () => {
 
             <div className="group relative rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 aspect-[4/3]">
               <img
-                src="https://i.ibb.co/cc3wF88M/grok-image-ecd51bac-f12c-4ebf-8332-1a392eaee1f1.jpg"
-                alt="Processamento e Montagem de Matrizes"
+                src={`${import.meta.env.BASE_URL}assets/img/inspecao-lupa-medicao.jpg`}
+                alt="Inspeção de pontos do clichê com lupa de medição"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />
@@ -105,8 +105,8 @@ export const OperacaoGroup = () => {
 
             <div className="group relative rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 aspect-[4/3]">
               <img
-                src="https://i.ibb.co/Z6R0zPXL/grok-image-812f96fd-968b-4a30-9d19-a8c91e44fc21.jpg"
-                alt="Gravadoras Digitais de Alta Resolução"
+                src={`${import.meta.env.BASE_URL}assets/img/chapas-fotopolimeras-mesa.jpg`}
+                alt="Clichês fotopolímeros gravados sobre a mesa de inspeção"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />
@@ -118,8 +118,8 @@ export const OperacaoGroup = () => {
 
             <div className="group relative rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 aspect-[4/3]">
               <img
-                src="https://i.ibb.co/DPX2z1vg/Captura-de-tela-2025-09-30-164544.png"
-                alt="Gerenciamento de Cores e Calibração Colorimétrica"
+                src={`${import.meta.env.BASE_URL}assets/img/prova-colorimetrica.jpg`}
+                alt="Prova colorimétrica com tira de controle de cores"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />

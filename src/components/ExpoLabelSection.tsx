@@ -14,19 +14,19 @@ export const ExpoLabelSection: React.FC = () => {
 
   const fotos: PhotoItem[] = [
     {
-      url: "https://i.ibb.co/hFGrLB0Z/IMG-4480.jpg",
+      url: `${import.meta.env.BASE_URL}assets/img/img-4480.jpg`,
       title: "Stand Institucional PMG Group",
       category: "Ecossistema Integrado",
       description: "Apresentação conjunta da PMG Flexo, PMG Narrow, Tizza Tecnologia (Kaiaki) e VP Filmes na Expo & Label 2026."
     },
     {
-      url: "https://i.ibb.co/Zys776T/IMG-4493.jpg",
+      url: `${import.meta.env.BASE_URL}assets/img/img-4493.jpg`,
       title: "Demonstração Técnica & Amostras",
       category: "Retículas Everest® & Glaciar®",
       description: "Exibição de matrizes fotopolímeras gravadas a 200 LPI e impressos com simulação de cor certificada GMG."
     },
     {
-      url: "https://i.ibb.co/L2g4kf3/IMG-4499.jpg",
+      url: `${import.meta.env.BASE_URL}assets/img/img-4499.jpg`,
       title: "Espaço de Negócios & Atendimento",
       category: "Relacionamento com Convertedores",
       description: "Recepção de gráficas convertedoras, brand owners e parceiros estratégicos do setor de embalagens."

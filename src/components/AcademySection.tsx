@@ -12,10 +12,10 @@ import { motion } from 'motion/react';
 
 export const AcademySection = () => {
   const academyImages = [
-    "https://i.ibb.co/QFVtbHz1/IMG-20250507-090246.jpg",
-    "https://i.ibb.co/Fkg2p09z/IMG-20250507-091302.jpg",
-    "https://i.ibb.co/Kj43pFJz/IMG-20250507-164317.jpg",
-    "https://i.ibb.co/zTVFxf6z/IMG-20250508-171925.jpg"
+    `${import.meta.env.BASE_URL}assets/img/img-20250507-090246.jpg`,
+    `${import.meta.env.BASE_URL}assets/img/img-20250507-091302.jpg`,
+    `${import.meta.env.BASE_URL}assets/img/img-20250507-164317.jpg`,
+    `${import.meta.env.BASE_URL}assets/img/img-20250508-171925.jpg`
   ];
 
   return (
@@ -28,7 +28,7 @@ export const AcademySection = () => {
           {/* Background Image Overlay */}
           <div className="absolute inset-0 z-0">
             <img
-              src="https://i.ibb.co/TBNRdKT4/IMG-20250507-090246.jpg"
+              src={`${import.meta.env.BASE_URL}assets/img/img-20250507-090246.jpg`}
               alt="Treinamento PMG Academy"
               className="w-full h-full object-cover opacity-30"
               referrerPolicy="no-referrer"
@@ -39,7 +39,7 @@ export const AcademySection = () => {
           <div className="lg:w-3/5 relative z-10">
             <div className="mb-6">
               <img 
-                src="https://i.postimg.cc/7PJBLYRw/PMG_Academy_black.png" 
+                src={`${import.meta.env.BASE_URL}assets/img/pmg-academy-black.png`} 
                 alt="PMG Academy Logo" 
                 className="h-14 w-auto object-contain brightness-0 invert"
                 referrerPolicy="no-referrer"
