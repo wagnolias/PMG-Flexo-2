@@ -393,7 +393,6 @@ export const QuemSomosOQueFazemos = () => {
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                   {[
                     { url: "https://i.ibb.co/DDRQf7Zk/IMG-20250819-154720.jpg", title: "Gravadoras Digitais CDI Esko Pixel+" },
-                    { url: "https://i.ibb.co/9kzXzQwh/IMG-20250819-154650.jpg", title: "Laboratório Climatizado de Gravação" },
                     { url: "https://i.ibb.co/5xSDVZnj/IMG-20250819-154716.jpg", title: "Central de Pré-Impressão & RIP" },
                     { url: "https://i.ibb.co/ccTQjcQ2/IMG-20250819-154549.jpg", title: "Lavagem & Processamento Automático" },
                     { url: "https://i.ibb.co/ZpzYQMKS/IMG-20250819-154538.jpg", title: "Controle e Inspeção Óptica Digital" },
